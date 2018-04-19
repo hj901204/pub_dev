@@ -1,0 +1,20 @@
+@mixin active($color: $outline-color) {
+  border-color: lighten($color, 10%);
+  outline: 0;
+  box-shadow: 0 0 $outline-blur-size $outline-width fade($color, 10%);
+}
+
+// == when hoverd
+@mixin hover($color: $input-hover-border-color) {
+  border-color: lighten($color, 10%);
+}
+
+@mixin disabled() {
+  background-color: $input-disabled-bg;
+  opacity: 1;
+  cursor: $cursor-disabled;
+  color: #ccc;
+  &:hover {
+    @include hover($input-border-color);
+  }
+}

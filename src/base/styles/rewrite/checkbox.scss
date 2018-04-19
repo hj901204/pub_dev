@@ -1,0 +1,56 @@
+@mixin antCheckboxFn($checkbox-prefix-cls: "#{$ant-prefix}-checkbox") {
+    $primary-color: #fb6e52;
+    $checkbox-inner-prefix-cls: "#{$checkbox-prefix-cls}-inner";
+    // 一般状态
+    .#{$checkbox-prefix-cls} {
+        .#{$checkbox-prefix-cls}-wrapper:hover &,
+        &:hover &-inner,
+        &-input:focus + &-inner {
+            border-color: $primary-color;
+        }
+    }
+    
+    // 半选状态
+    .#{$checkbox-prefix-cls}-indeterminate {
+        .#{$checkbox-inner-prefix-cls} {
+            border-color: $primary-color;
+            background-color: #FFFFFF;
+            &:after {
+                border-color: $primary-color;
+            }
+        }
+    }
+    // 选中状态
+    .#{$checkbox-prefix-cls}-checked {
+        &:hover {
+            .#{$checkbox-inner-prefix-cls} {
+                border-color: $primary-color;
+            }
+        }
+        .#{$checkbox-inner-prefix-cls} {
+            border-color: $primary-color;
+            background-color: #FFFFFF;
+        }
+        .#{$checkbox-inner-prefix-cls}:after {
+            border-color: $primary-color;
+        }
+    }
+    .#{$checkbox-prefix-cls}-disabled {
+    &.#{$checkbox-prefix-cls}-checked {
+      .#{$checkbox-inner-prefix-cls}:after {
+            border-color: #ccc;
+      }
+    }
+    .#{$checkbox-inner-prefix-cls} {
+        background-color: #f3f3f3;
+        &:after {
+            border-color: #f3f3f3;
+        }
+    }
+
+    & + span {
+      color: #ccc;
+    }
+  }
+}
+@include antCheckboxFn();

@@ -1,0 +1,5 @@
+{
+    "title": "首页",
+    "filename": "main.html",
+    "template": "./src/template/baiduMap.html"
+}

@@ -1,0 +1,8 @@
+$form-prefix-cls: "#{$ant-prefix}-form";
+$form-component-height: $input-height-lg;
+
+// Form items
+// You should wrap labels and controls in .@{form-prefix-cls}-item for optimum spacing
+.#{$form-prefix-cls}-item {
+  margin-bottom: $form-item-margin-bottom;
+}

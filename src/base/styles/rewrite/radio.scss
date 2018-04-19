@@ -1,0 +1,21 @@
+$radio-prefix-cls: "#{$ant-prefix}-radio";
+$radio-group-prefix-cls: "#{$radio-prefix-cls}-group";
+$radio-inner-prefix-cls: "#{$radio-prefix-cls}-inner";
+$radio-duration: .3s;
+
+.#{$radio-prefix-cls} {
+
+  .#{$radio-prefix-cls}-wrapper:hover &,
+    &:hover,
+    &-focused {
+        .#{$radio-inner-prefix-cls} {
+            border-color: $primary-color;
+        }
+    }
+    &-inner {
+        &:after {
+            border-radius: $border-radius-base;
+            background-color: $primary-color;
+        }
+    }
+}

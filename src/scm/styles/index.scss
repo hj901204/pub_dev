@@ -1,0 +1,100 @@
+@import "./main.scss";
+@import "./Import.scss";
+@import "./business.scss";
+@import "./businessPartner.scss";
+@import "./customer.scss";
+@import "./supplier.scss";
+@import "./supplierAddress.scss";
+@import "./supplierBase.scss";
+@import "./customerBase.scss";
+@import "./addPurchaseOrder.scss";
+@import "./purchaseView.scss";
+@import "./purchaseReturnViewComp.scss";
+@import "./production.scss";
+@import "./tableEdit.scss";
+@import "./addProducRec.scss";
+//物料
+@import "./material.scss";
+//bom
+@import "./linkInputComp.scss";
+@import "./bomAddtable.scss";
+@import "./bomDetail.scss";
+@import "./bomComp.scss";
+@import "./TableBomComp.scss";
+@import "./BomAddTableComp.scss";
+//销售订单
+@import "./saleOrderForm";
+@import "./SaleOrderSearchComp";
+@import "./saleOrderDetail.scss";
+@import "./SaleOrderFormComp.scss";
+@import "./SaleOrderTableComp.scss";
+@import './SaleOrderAddTableDialogComp.scss';
+
+//销售退货订单
+@import "./SaleReturn.scss";
+
+//生产退料订单
+@import "./productionReturnView.scss";
+
+
+
+//其他出库
+@import "otherOutboundOrderAddCont";
+
+//采购价格清单
+@import "./addPurchasePrice.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//库存
+
+@import "./purchaseList.scss";
+@import "./addPurchaseList.scss";
+@import "./saleCarryOut.scss";
+@import "./purchaseEidtScss.scss";
+@import "./purchaseSide.scss";
+@import "./salesStoreHouse";
+@import "./newSalesStoreHouse";
+@import "./instantInventory.scss";
+@import "./inventoryBreakdown.scss";
+@import "./instantsidebarwarp.scss";
+@import "./salesOutboundDetails.scss";
+@import "./storage";
+@import "./ReceiptDetails.scss";
+@import "./PurchaseReturnOutboundDetails";
+@import "./ProductIssueOutboundDetails";
+@import "./otherWarehouseCarryOut.scss";
+@import "./otherOutboundOrder";
+@import "./addOtherWareHousePage.scss";
+@import "./addOhterWareHousePageDialogList.scss";
+.temp-container{
+  height: 500px;
+  display: block;
+  width: 100%;
+  padding: 50px 100px;
+}
+
+.temp-container-item{
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 0.4s ease-in-out;
+  width: 80px;
+  display: inline-block;
+  cursor: -webkit-grab;
+  display: inline-block;
+}
+

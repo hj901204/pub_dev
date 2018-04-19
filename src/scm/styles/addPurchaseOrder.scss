@@ -1,0 +1,159 @@
+$purOrder: "purOrder";
+.purOrder-wrap {
+    .#{$purOrder}-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        margin-top: 12px;
+        padding: 0 20px 0 16px;
+        border: solid 1px #e2e2e2;
+        .title {
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        .ant-btn .ant-btn-primary {
+            width: 72px;
+            height: 30px;
+        }
+        .show-more-info {
+            display: block;
+            width: 100px;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 10px;
+            position: absolute;
+            top: 50px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            font-size: 12px;
+            background: #ffffff;
+            text-align: center;
+            border: 1px solid #e2e2e2;
+            border-radius: 10px;
+            color: #999999;
+            z-index: 1;
+        }
+    }
+    .#{$purOrder}-base-info {
+        border-left: solid 1px #e2e2e2;
+        border-right: solid 1px #e2e2e2;
+        border-bottom: solid 1px #e2e2e2;
+        .ant-col-8 {
+            border-right: solid 1px #e2e2e2;
+            padding: 24px 16px 6px;
+            .info-title {
+                font-size: 14px;
+                color: #4a4a4a;
+                padding-bottom: 16px;
+            }
+        }
+        .show-more-info {
+            position: absolute;
+            right: 12px;
+            bottom: 7px;
+        }
+    }
+    .#{$purOrder}-other-info {
+        border-left: solid 1px #e2e2e2;
+        border-right: solid 1px #e2e2e2;
+        border-bottom: solid 1px #e2e2e2;
+        .ant-col-8 {
+            padding: 0 16px 6px;
+        }
+        .info-title {
+            padding: 24px 16px 30px;
+            font-size: 14px;
+            color: #4a4a4a;
+            padding-bottom: 16px;
+        }
+    }
+    .#{$purOrder}-detail-info {
+        margin-top: 11px;
+        .purchaseDetail-table {
+            .ant-table-title {
+                .tab-title {
+                    display: flex;
+                    justify-content: space-between;
+                    .left-text {
+                        color: #4a4a4a
+                    }
+                    .total {
+                        .laber {
+                            padding-left: 20px;
+                            color: #999999;
+                        }
+                        .number {
+                            color: #fe8010;
+                        }
+                    }
+                    .c2mfont {
+                        padding-right: 5px;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.purOrder-detail-line {
+    .ant-modal-body {
+        padding: 12px 20px 0;
+        .ant-form-item-label label {
+            font-size: 12px;
+            color: #a3a3a3;
+        }
+        .ant-row .ant-form-item {
+            margin-bottom: 10px;
+            .ant-col-6 {
+                width: 88px;
+            }
+            .ant-col-14 {
+                width: 200px;
+            }
+            .ant-col-18 {
+                width: 562px;
+            }
+        }
+        .material-info {
+            background-color: #f0f0f0;
+            padding: 4px 0;
+            margin-bottom: 10px;
+            .ant-row .ant-form-item {
+                margin-bottom: 0px;
+            }
+            .ant-form-item-label {
+                line-height: 24px;
+            }
+            .ant-form-item-control {
+                line-height: 24px;
+            }
+        }
+        .tax {
+            display: flex;
+            align-items: flex-end;
+            .tax-info {
+                margin-left: 8px;
+                font-size: 12px;
+                color: #a3a3a3;
+                margin-bottom: 10px;
+                line-height: 32px;
+            }
+        }
+        .ant-col-12 {
+            width: 362px;
+        }
+        .ant-col-24 {
+            display: flex;
+            align-items: flex-end;
+            .remarks {
+                font-size: 12px;
+                color: #a3a3a3;
+                margin-left: 8px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

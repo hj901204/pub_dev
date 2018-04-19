@@ -1,0 +1,143 @@
+$border: 1px solid #e2e2e2;
+.PurchaseRetView-wrap {
+    font-family: PingFangSC-Regular;
+    color: #4b4b4b;
+    margin-top: 12px;
+    .PurchaseRetView-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 16px 16px;
+        border: $border;
+        .order {
+            height: 26px;
+            line-height: 26px;
+            font-size: 14px;
+            font-family: PingFangSC-Semibold;
+        }
+        .status {
+            height: 24px;
+            line-height: 24px;
+            color: #999999;
+        }
+        .morebtn {
+            margin: 0 4px 0 10px;
+        }
+        .show-more-info {
+            display: block;
+            width: 100px;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 10px;
+            position: absolute;
+            top: 70px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            font-size: 12px;
+            background: #ffffff;
+            text-align: center;
+            border: 1px solid #e2e2e2;
+            border-radius: 10px;
+            color: #999999;
+            z-index: 1;
+        }
+    }
+    .PurchaseRetView-info {
+        border-left: $border;
+        border-right: $border;
+        border-bottom: $border;
+        ul>li {
+            min-height: 24px;
+            line-height: 24px;
+            span {
+                color: #999999;
+                text-align: right;
+                display: inline-block;
+                width: 75px;
+            }
+        }
+        .header {
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .base-info {
+            padding: 16px 30px 24px 16px;
+        }
+        .receive-info {
+            padding: 16px 30px 24px 16px;
+            li>span {
+                display: inline-block;
+                width: 84px;
+            }
+        }
+        .other-info {
+            padding: 16px 30px 24px 16px;
+            // border-left: $border;
+            .remarks {
+                margin-left: 75px;
+                margin-top: -24px;
+            }
+        }
+    }
+    .PurchaseRetView-remark {
+        border-left: $border;
+        border-right: $border;
+        border-bottom: $border;
+        .header {
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .bayer-info {
+            padding: 16px 12px 30px 16px;
+        }
+        .shop-info {
+            padding: 16px 12px 30px 16px;
+            border-left: $border;
+        }
+    }
+    .PurchaseRetView-table {
+        .ant-table-title {
+            .tab-title {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 0 10px;
+                .left-text {
+                    color: #4a4a4a
+                }
+                .total {
+                    .laber {
+                        padding-left: 20px;
+                        color: #999999;
+                    }
+                    .number {
+                        color: #fe8010;
+                    }
+                }
+                .c2mfont {
+                    padding-right: 5px;
+                    padding-left: 20px;
+                }
+            }
+        }
+        .PurchaseRetView-spec {
+            padding-left: 10px;
+        }
+    }
+}
+.addPurchaseReturn_col{
+    border:$border;
+    border-top:0;
+    .ant-col-8{
+        .ant-form-item{
+            margin-bottom:12px;
+        }
+        .ant-form-item:last-child{
+            margin-bottom:24px;
+    }
+    }
+    
+}

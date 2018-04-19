@@ -1,0 +1,352 @@
+
+.sale-carryout-box{
+    position: relative;
+    margin-top: 12px;
+    .ant-form{
+        border: 1px solid #e2e2e2;
+        border-bottom: none;
+    }
+    .sale-order-distribute{
+        cursor: pointer;
+        text-align: center;
+        border:1px solid #9d9d9d;
+        border-radius: 100%;
+        color: #9d9d9d;
+    }
+    .sale-order-delete{
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+    }
+    .sale-order-distribute:hover{
+            background-color: #4c80cf;
+            color: #fff;
+            border:1px solid #4c80cf; 
+    }
+    .ant-table-thead > tr,.ant-table-tbody > tr{
+        .lineNum-header{
+            text-align: center;
+            width: 54px;
+            padding-left:0;
+        }
+        .operate-header{
+            text-align: center;
+            width: 66px;
+            padding-left:0;
+        }
+        .lineNum{
+            text-align: center;
+            display: inline-block;
+            width: 54px;
+            padding-left: 0;
+        }
+    }
+ .sale-carryout-title{
+     border-bottom:1px solid #dfdfdf;
+     display: flex;
+     justify-content: space-between;
+     padding: 20px 20px;
+     .sale-carryout-title-info{
+         p{
+             font-size: 14px;
+             color:#000;
+             font-weight: 500;
+             margin-bottom: 8px;
+         }
+         span{
+             color:#999;
+             margin-right: 16px;
+             .sale-carryout-title-sectionDistribute{
+                color:#F6A623;
+             }
+             .sale-carryout-title-Distribute{
+                color:#F6A623;
+             }
+             .sale-carryout-title-sectionShip{
+                color:#F6A623;
+             }
+             .sale-carryout-title-close{
+                color: #D0011B;
+             }
+             .sale-carryout-title-ship{
+                color:#417505;
+             }
+            .sale-carryout-title-save{
+                color:#4C80CF;
+             }
+         }
+     }
+     .ant-btn-primary{
+        margin-top: 10px;
+        position: relative;
+        padding-left: 29px;
+        background-color: #4c80cf;
+        margin-right: 10px;
+     }
+     .ant-select-selection{
+        border: 1px solid #4c80cf;
+        color: #4c80cf;
+     }
+     .sale-carryout-title-info-shipping{
+        position: absolute;
+        left: 11px;
+        top: 4px;
+        font-size: 12px;
+    }
+    .sale-carryout-title-info-edit{
+        position: absolute;
+        left: 5px;
+        top: -4px;
+        font-size: 24px;
+    }
+  }
+  .sale-carryout-doc-no{
+      position: absolute;
+      top: 75px;
+      width: 98px;
+      height: 24px;
+      border: 1px solid #e2e2e2;
+      border-radius: 20px;
+      left: 50%;
+      margin-left: -50px;
+      color:#999;
+      text-align: center;
+      line-height: 24px;
+      background-color:#fff;
+      cursor: pointer;
+  }
+  .sale-carryout-info{
+    .sale-carryout-info-up{
+        display: flex;
+        border-bottom: 1px solid #e2e2e2;
+        .sale-carryout-info-item{
+            width:34%;
+            border-right: 1px solid #e2e2e2;
+            padding: 24px 0 0 16px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            h3{
+                font-family:PingFangSC-Semibold;
+                font-size:14px;
+                color:#4a4a4a;
+                text-align:left;
+                position: relative;
+                padding-left: 10px;
+                margin-bottom: 12px;
+            }
+            p{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 300px;
+                span{
+                    color: #999;
+                    text-align: right;
+                    width: 83px;
+                    display: inline-block;
+                    margin-bottom: 12px;
+                }
+            }
+            .sale-carryout-info-putaway-info,.production-carryout-info-putaway-info{
+                height: 34px;
+                line-height: 34px;
+                text-align: right;
+                margin-right: 20px;
+                margin-top: 22px;
+            }
+            .production-carryout-info-putaway-info{
+                margin-top: 0px;
+            }
+        }
+        .sale-carryout-info-item-other{
+            p{
+                span{
+                    width: 47px;
+                }
+            }
+            
+        }
+        .sale-carryout-info-item-right{
+            width:66%;
+            padding: 24px 0 0 16px;
+            .sale-carryout-info-item-right-item{
+                display: flex;
+                .sale-carryout-info-item-list{
+                    margin-right: 165px;
+                }
+            }
+            h3{
+                font-family:PingFangSC-Semibold;
+                font-size:14px;
+                color:#4a4a4a;
+                text-align:left;
+                position: relative;
+                padding-left: 10px;
+                margin-bottom: 12px;
+            }
+            p{
+                span{
+                    color: #999;
+                    text-align: right;
+                    width: 74px;
+                    display: inline-block;
+                    margin-bottom: 12px;
+                }
+            }
+            .sale-carryout-info-putaway-info{
+                height: 34px;
+                line-height: 34px;
+                text-align: right;
+                margin-right: 20px;
+            }
+        }
+    }
+    .sale-carryout-info-down{
+        padding: 20px 20px 20px 16px;
+        p{
+            display: flex;
+            margin-bottom: 12px;            
+            .sale-carryout-info-down-title{
+                color: #999;
+                text-align: right;
+                width: 74px;
+                display: inline-block;
+            }
+            .sale-carryout-info-down-price-title{
+                width: 79px;
+            }
+        }
+        .ant-form-item{
+            display: flex;
+            margin-bottom: 0;
+            .ant-form-item-label label{
+                color: #999;
+                width: 74px;
+                display: inline-block;
+            }
+            textarea.ant-input {
+                height: auto;
+                resize: none;
+                padding: 10px;
+                width: 948px;
+                height: 56px;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .sale-carryout-info-down-show{
+        display: block;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .sale-carryout-info-down-hide{
+        display: none;
+    }
+  }
+  .sale-carryout-info-show{
+      display: block;
+  }
+  .sale-carryout-info-hide{
+      display: none;
+  }
+  
+  .sale-carryout-tabs{
+    margin-top: 20px;
+    .ant-tabs-bar{
+        margin-bottom: 10px;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active{
+        color: #4c80cf;
+    }
+    .ant-tabs-tab:hover{
+        color: #4c80cf;
+    }
+    .ant-tabs-ink-bar{
+        background-color: #4c80cf;
+    }
+  }
+}
+.inventory-select-dialog{
+    .inventory-select-number{
+        width: 70px;
+    }
+}
+.inventory-select-dialog,.instant-inventory-box,.inventory-breakdown-box{
+    .inventory-select-dialog-title{
+        padding: 20px 60px;
+        margin: 0 -60px;
+        border-bottom: 1px solid #d5d5d5;
+        display: flex;
+        justify-content: space-between;
+        .inventory-select-dialog-title-left-up{
+            font-size: 14px;
+            line-height: 20px;
+            span{
+                margin-right: 30px;
+            }
+        }
+        .inventory-select-dialog-title-left-down{
+            font-size: 12px;
+            line-height: 20px;
+            span{
+                margin-right: 15px;
+            }
+        }
+        .inventory-select-dialog-title-right{
+            line-height: 20px;
+            text-align: right;
+            .receipt-number{
+                color: #fe8010;
+            }
+            .distribute-number{
+                color: #5cb85c;
+            }
+        }
+    }
+    .ant-form{
+        display: flex;
+        padding: 20px 0;
+        .ant-btn-primary{
+            margin-left: 20px;
+        }
+        .ant-form-item{
+            margin-bottom: 0;
+            .ant-input{
+                margin-right: 20px;
+            }
+            .ant-select{
+                width: 171px;
+                margin-right: 20px;
+            }
+        }
+        
+    }
+    .ant-table-content{
+        overflow: auto;
+        height: 300px;
+    }
+}
+.purchaseprice-cont{
+    .operate-header{
+        text-align: center;
+        width: 66px;
+        padding-left: -14px;
+    }
+    .sale-order-distribute{
+        cursor: pointer;
+        text-align: center;
+        border:1px solid #e2e2e2;
+        border-radius: 100%;
+        color: #999;
+        font-size: 16px;
+    }
+    .sale-order-delete{
+        margin-left: 6px;
+    }
+    .sale-order-distribute:hover{
+            background-color: #4c80cf;
+            color: #fff;
+            border:1px solid #4c80cf; 
+    }
+}

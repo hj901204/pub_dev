@@ -1,0 +1,25 @@
+.bom-link-input-cont{
+  line-height: 68px;
+  // border-bottom: 2px solid #e5e8ec;
+  // margin-bottom: 30px;
+  .input-select{
+    margin: 0 20px;
+  }
+  .default-btn {
+    color: #fff;
+    background-color: #4c80cf;
+    border-color: #4c80cf;
+  }
+  .default-btn:hover{
+    background: #fff;
+    color: #108ee9;
+}
+  .query-bom{
+    margin-left: 20px;
+  }
+  .new-bom{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+}

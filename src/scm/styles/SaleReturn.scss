@@ -1,0 +1,428 @@
+.ew-layout-content {
+    .manage-content {
+        .manage-head {
+            line-height: 68px;
+            border-bottom: 2px solid #e5e8ec;
+            .ant-input-affix-wrapper {
+                margin-left: 20px;
+            }
+            .ant-btn {
+                float: right;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+        }
+        .manage-body {
+            padding: 20px;
+            .ant-table-wrapper {
+                border: 1px solid #e5e8ec;
+            }
+        }
+    }
+}
+
+// saleReturnListCont
+.saleReturn-list {
+    .ant-select-selection__placeholder, .ant-select-search__field__placeholder {
+      color: #4a4a4a;
+    }
+    .ant-table-tbody > tr > td {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .link-input-cont {
+        margin-bottom: 0;
+        border-width: 0;
+        .input-select {
+          margin: 0;
+          height: 60px;
+          line-height: 60px;
+        }
+        .default-btn {
+            color: #fff;
+            background-color: #4c80cf;
+            border-color: #4c80cf;
+            &:hover {
+                background: #fff;
+                color: #108ee9;
+            }
+        }
+        .query-saleReturn {
+            margin-left: 15px;
+        }
+        .new-saleReturn {
+            float: right;
+            margin-top: 20px;
+        }
+    }
+  
+}
+
+// saleReturnComp & saleReturnEditComp
+.saleReturn-wrap {
+    border-bottom: 2px solid #e5e8ec;
+    .saleReturn-header {
+            display: flex;
+            height: 60px;
+            width: 100%;
+            border: 1px solid #e2e2e2;
+            border-bottom-width: 0;
+            margin-top: 12px;
+            align-items: center;
+        .saleReturn-header-title {
+            margin-left: 16px;
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        .save {
+            position: absolute;
+            right: 95px;
+            top: 20px;
+        }
+        .back {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+    }
+    .saleReturn-form-content {
+      border: 1px solid #e2e2e2;
+      border-top-width: 0;
+      margin-top: -16px;
+      & + div {
+          .ant-row:first-child {
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+      }
+      .ant-collapse-header {
+          display: inline-block;
+          padding: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          position: relative;
+          top: 10px;
+          height: 20px;
+          width: 100px;
+          text-align: center;
+          border: 1px solid #e2e2d2;
+          line-height: 20px;
+          border-radius: 10px;
+          z-index: 100;
+          background: #fff;
+          color: #999;
+          font-size: 12px;
+          & > .arrow {
+            display: none !important;
+          }
+          &:hover {
+              background: #fff;
+          }
+      }
+      .ant-collapse-content {
+        padding: 0;
+        & > .ant-collapse-content-box {
+            padding: 0;
+            .saleReturn-otherInfo {
+                .ant-col-12 {
+                    border-right-width: 0;
+                    border-top: 1px solid #e2e2e2;
+                    &:nth-child(2) {
+                        padding-top: 60px;
+                    }
+                }
+            }
+        }
+        .ant-row-flex .ant-col-12 {
+          border-right: 1px solid #e2e2e2;
+          padding-bottom: 20px;
+          .ant-form-item {
+              margin-bottom: 12px;
+          }
+          &:last-child {
+            border-right-width: 0;
+          }
+        }
+      }
+    }
+    .saleReturn-detailinfo-title {
+            font-size: 12px;
+            color: #4a4a4a;
+        }
+        .detailinfo-right {
+            text-align: right;
+            padding-right: 160px;
+            & > span {
+                margin-left: 20px;
+                color: #999;
+                span {
+                    color: #fe8010;
+                }
+            }
+        }
+    .default-btn {
+        color: #fff;
+        background-color: #6d8ec1;
+        border-color: #6d8ec1;
+    }
+    .default-btn:hover {
+        background: #fff;
+        color: #108ee9;
+    }
+    .saleReturn-baseInfo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .saleReturn-baseInfo-icon {
+            margin-left: 20px;
+            margin-bottom: 30px;
+            font-size: 10px;
+            line-height: .9;
+            border-left: 3px solid #fd7c28;
+        }
+        .saleReturn-form-baseInfo {
+            font-size: 14px;
+            margin-left: 16px;
+            color: #4a4a4a;
+        }
+    }
+    .add-table-wrap {
+        margin-top: 0;
+        .saleOrder-add-btn {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: -46px;
+        }
+        .add-table {
+            .ant-table-thead > tr > th {
+                &:first-child {
+                    padding-left: 10px;
+                }
+                padding: 0;
+            }
+            padding: 0;
+        }
+        .contactBtn {
+            margin-left: 20px;
+        }
+    }
+    .add-table .ant-table-fixed-left {
+        z-index: 100;
+    }
+}
+
+// saleReturnDetail
+.saleReturnDetail-content {
+    .saleReturn-head {
+        padding: 18px 16px; // border-bottom: 1px solid #e2e2e2;
+        border: 1px solid #d9d9d9;
+        border-bottom-width: 0;
+        margin-top: 12px;
+        position: relative;
+        z-index: 100;
+    }
+    .saleReturn-head-left {
+        display: inline-block;
+        line-height: 1.8;
+    }
+    .saleReturn-head-right {
+        display: inline-block;
+        float: right;
+        .ant-select-selection--single {
+            color: #fff;
+            background-color: #6d8ec1;
+            border-color: #6d8ec1;
+        }
+    }
+    .saleReturn-head-right-button {
+        display: inline-block;
+        padding-top: 5px;
+    }
+    .saleReturn-icon {
+        padding-left: 10px;
+        margin-bottom: 30px;
+        font-size: 10px;
+        line-height: .9;
+        border-left: 4px solid #fd7c28;
+    }
+    .saleReturn-body {
+        .saleReturn-content {
+            overflow: hidden;
+            .ant-col-12 {
+                padding-top: 24px;
+                padding-left: 16px;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:not(:last-child) {
+                    border-right: 1px solid #e2e2d2;
+                }
+            }
+        }
+        .ant-collapse-content>.ant-collapse-content-box {
+            padding: 0;
+        }
+    }
+    .saleReturn-baseinfo-con,
+    .saleReturn-stateinfo-con {
+        margin-top: 14px;
+        margin-bottom: 20px;
+        >ul {
+            >li {
+                margin-bottom: 6px;
+                font-size: 12px;
+                color: #999;
+                >span {
+                    display: inline-block;
+                    text-align: right;
+                    &:first-child {
+                        width: 84px;
+                    }
+                    &:nth-child(2) {
+                        text-align: left;
+                        color: #4a4a4a;
+                    }
+                }
+            }
+        }
+    }
+    .saleReturn-detailedinfo {
+        &>.ant-row {
+            height: 30px;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+        .detailinfo-right {
+            &>span {
+              margin-left: 20px;
+              color: #999;
+              span {
+                color: #fe8010;
+              }
+            }
+            text-align: right;
+        }
+    }
+    .saleReturn-baseinfo-title,
+    .saleReturn-stateinfo-title,
+    .saleReturn-detailedinfo-title {
+        color: #4a4a4a;
+    }
+    .saleReturn-baseinfo-con-li {
+        padding-left: 10px;
+        display: inline-block;
+        width: 80%;
+        vertical-align: top;
+        color: #4a4a4a;
+    } // .saleReturn-stateinfo-con-li {
+    //     margin-bottom: 6px;
+    //     font-size: 12px;
+    //     color: #999;
+    // }
+    .saleReturn-remarks {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 400px;
+    }
+    .saleReturn-head-h1 {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .saleReturn-head-h1,
+    .saleReturn-head-h {
+        display: block;
+    }
+    .saleReturn-head-h {
+        .saleReturn-head-strong {
+            padding-right: 5px;
+        }
+    }
+    .saleReturn-head-span {
+        margin-right: 10px;
+        color: #999;
+        .saleOrderStatus {
+            color: #4c80cf;
+        }
+        .pushdownStatus {
+            color: #f66666;
+        }
+    }
+    .saleReturnDetail-edit-btn {
+        color: #fff;
+        background-color: #6d8ec1;
+        border-color: #6d8ec1;
+        margin-right: 20px;
+    }
+    .saleReturnDetail-edit-btn:hover,
+    .saleReturnDetail-edit-btn:focus {
+        color: #108ee9;
+        background-color: #fff;
+        border-color: #108ee9;
+    }
+    .ant-collapse-borderless>.ant-collapse-item {
+        margin-top: -20px;
+        &>.ant-collapse-content {
+            border: 1px solid #d9d9d9;
+            border-radius: 0;
+        }
+    }
+    .ant-collapse-borderless>.ant-collapse-item>.ant-collapse-header {
+        display: inline-block;
+        padding: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        top: 10px;
+        height: 20px;
+        width: 100px;
+        text-align: center;
+        border: 1px solid #e2e2d2;
+        line-height: 20px;
+        border-radius: 10px;
+        z-index: 100;
+        background: #fff;
+        color: #999;
+        font-size: 12px;
+        &:hover {
+            background: #fff;
+        }
+        .arrow {
+            display: none;
+        }
+    }
+}
+.hidden-node { display: none; }
+// .manage-content .saleReturn-baseInfo {
+//     margin-top: 30px;
+//     margin-bottom: 20px;
+//     .saleReturn-baseInfo-icon {
+//         margin-right: 10px;
+//         margin-bottom: 30px;
+//         font-size: 10px;
+//         line-height: .9;
+//         border-left: 3px solid #fd7c28;
+//     }
+//     .saleReturn-baseinfo-title {
+//         font-size: 14px;
+//         color: #4a4a4a;
+//         font-weight: bold;
+//     }
+// }
+// .saleReturn-modal .select-table-comp {
+//     .ant-input-lg {
+//         width: 180px !important;
+//     }
+// }
+//
+.ant-row {
+    .col-right-pos {
+        position: relative;
+        .input-right-pos {
+            position: absolute;
+            right: -16px;
+            top: 2px;
+        }
+    }
+}

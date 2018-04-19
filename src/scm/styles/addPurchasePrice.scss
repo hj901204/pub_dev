@@ -1,0 +1,99 @@
+.addPurchasePrice-cont{
+    a:focus {
+        text-decoration: none;
+    }
+    .addPurchasePrice-title{
+        position: relative;
+        margin-top: 12px;
+        .form-showOrhide{
+            display: block;
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            border: 1px solid #e2e2e2;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            background: #fff;
+            z-index: 10;
+        }
+        .saveBtn{
+            width: 72px;
+            height: 30px;
+            padding: 0;
+            background: #4C80CF;
+            border-color: #4C80CF;
+            .c2m-baocun{
+                font-size: 10px;
+                margin-right: 6px;
+            }
+        }
+    }
+    .priceItemTitle{
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #4a4a4a;
+        font-weight: bold;
+    }
+    .addPurchasePrice-form{
+        border: 1px solid #e2e2e2;
+        border-top: 0;
+        padding: 20px 20px 10px;
+        position: relative;
+        .detail-showOrhide{
+            font-size: 12px;
+            color: #4990E2;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        
+    }
+    .addPurchasePrice-remark{
+        border: 1px solid #e2e2e2;
+        border-top: 0;
+        padding: 20px 20px 0;
+        .ant-form-item{
+            margin-bottom: 20px;
+        }
+    }
+}
+.purPriceDetail-table{
+    .ant-table-thead > tr, .ant-table-tbody > tr{
+        .textAlignCenter{
+            text-align: center
+        }
+        .firstColCenter{
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+    
+}
+.purPrice-material-dialog{
+    .materailform-item-text{
+        margin-bottom: 10px;
+    }
+    .table-tooltip{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    .material-unitName{
+        position: absolute;
+        top: 0;
+        right: -26px;
+        width: 51px;
+        z-index: 4;
+        
+    }
+}
+.addPurPriceMaterial{
+    .ant-modal-body{
+        padding: 20px 20px 0;
+    }
+}

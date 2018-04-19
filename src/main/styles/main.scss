@@ -1,0 +1,60 @@
+@import "./memberManager.scss";
+
+@import "./employee.scss";
+
+@import "./person.scss";
+@import './importEmployee.scss';
+@import "./personManage.scss";
+
+.ew-layout-content {
+    .manage-content {
+        .manage-head {
+            line-height: 68px;
+            border-bottom: 2px solid #e5e8ec;
+            .ant-input-affix-wrapper {
+                margin-left: 20px;
+            }
+            .ant-btn {
+                float: right;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+        }
+        .manage-body {
+            padding: 20px;
+            .ant-table-wrapper {
+                border: 1px solid #e5e8ec;
+            }
+        }
+    }
+}
+
+.address-form {
+    .ant-form-item {
+        margin-bottom: 12px;
+
+        .ant-form-item-label {
+            max-width: 80px;
+        }
+    }
+    .ant-form-item-with-help {
+        margin-bottom: 0px;
+    }
+    .select-ganged{
+        .select-item{ padding-right: 5px;}
+    }
+    .map {
+        height: 372px;
+        .ant-form-item-control-wrapper,
+        .ant-form-item-control,
+        #map {
+            height: 100%;
+        }
+    }
+}
+
+.demo-page{
+    .manage-content{
+        padding: 20px;
+    }
+}

@@ -1,0 +1,202 @@
+
+
+$topMenuHeight:38px;
+$topMenuHoverColor:#4c80cf;
+
+
+
+.navbar{
+    /*    z-index: 999;*/
+    /*    position: relative;*/
+    .navbar-bar{
+        height: $topMenuHeight;
+    }
+    .menu-hover-class{
+        background-color: $topMenuHoverColor!important;
+    }
+    .no-children-class{
+        &:after{
+            content: "" !important;
+        }
+    }
+
+    .navbar-menu-main{
+        display: inline-block;
+        position: relative;
+        outline: none;
+        user-select: none;
+        box-sizing: border-box;
+        /*        background-color: #fff;*/
+        color:white;
+        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        margin: 0 10px;
+        .navbar-menu-title{
+            height: $topMenuHeight;
+            display: inline-block;
+            padding: 0px 20px;
+            line-height: $topMenuHeight;
+            font-size: 16px;
+            /*      cursor: pointer;*/
+
+            .ant-select-arrow{
+                right: 5px;
+                top: $topMenuHeight /2 +3;
+                font-weight: 600;
+                position: absolute;
+            }
+
+            &:hover{
+                .ant-select-arrow:before{
+                    -webkit-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    transform: rotate(180deg);
+
+                }
+            }
+
+        }
+    }
+
+    .menu-btn-item{
+        display: block;
+    }
+    .last-menu{
+        white-space: normal;
+        overflow: visible !important;
+
+        .menu-last-item{
+            width: 114px;
+            background-color: #485370;
+            color: white;
+            line-height: 34px;
+
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+
+
+            cursor: pointer;
+
+            padding: 2px 4px;
+            margin: 6px 10px;
+
+            white-space:nowrap;
+
+
+            /*  &:hover{
+                  background-color: $topMenuHoverColor;
+              }*/
+            /*height:900px;*/
+        }
+
+    }
+
+    .scroll-container{
+        width: 440px;
+        .scroll-vertical-bar{
+            opacity: 1 !important;
+        }
+    }
+}
+
+
+
+.navbar-bar{
+    a{
+        &:link{
+            text-decoration:none !important;
+        }
+        &:visited{
+            text-decoration:none !important;
+        }
+        &:hover{
+            text-decoration:none !important;
+        }
+    }
+
+    .navbar-menu-main{
+        .navbar-menu-root{
+            color: white;
+            cursor: pointer;
+            position: relative;
+        }
+    }
+}
+
+
+.navbar-container{
+
+
+    .ant-dropdown{
+        width: 100%;
+        left: 0px !important;
+        top: 38px !important;
+        .ant-layout{
+            background: rgba(42,51,73,0.95);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+
+
+            .ant-cascader-menus{
+                background: transparent;
+                box-shadow: 0 1px 6px rgba(0, 0, 0, 0);
+
+
+                .ant-cascader-menu{
+                    height: 354px;
+                    padding-bottom: 36px;
+                    border-right: 1px solid #686b7c;
+                    &:last-child{
+                        border-right: 1px solid #686b7c;
+                    }
+                }
+            }
+
+
+        }
+        .navbar-container-item{
+            width:100%;
+            .navbar-container-warp{
+                width: 1150px;
+                margin: 20px auto;
+
+            }
+        }
+    }
+
+    .ant-cascader-menus{
+        position: static;
+
+
+
+        .ant-cascader-menu{
+            padding-left: 40px;
+        }
+
+        .ant-cascader-menu-item{
+            width: 180px;
+            padding-right: 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: white;
+            font-size: 16px;
+            a{
+                color: white;
+            }
+            &:hover{
+                background: $topMenuHoverColor;
+            }
+            &:after{
+                font-size: 16px;
+                color: white;
+            }
+
+        }
+
+
+
+
+    }
+}

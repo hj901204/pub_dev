@@ -1,0 +1,55 @@
+.ew-layout-content{
+    .customer-cont{
+        .customer-head{
+            line-height: 68px;
+            border-bottom: 2px solid #e5e8ec;
+            .ant-select {
+                margin: 0 20px !important;
+            }
+            .ant-btn {
+                float: right;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+            .customer-btns{
+                float: right;
+                .ant-btn{
+                    float: none;
+                }
+            }
+        } 
+        .customer-body {
+            .handle{
+                text-align: center;
+            }
+        }
+    }
+    .addCustomer_form{
+        .ant-col-8{
+            .ant-form-item{
+                margin-bottom:12px;
+                .ant-select-lg{
+                    width:100% !important;
+                }
+                .ant-form-item-label{
+                    label{
+                        color:#4a4a4a;
+                    }
+                } 
+                
+            }
+            
+        }
+        .addCustomer_business{
+            border:1px solid #E2E2E2;
+            border-top:0;
+            padding-top:18px;
+           position: relative;
+           .more-remark{
+               position: absolute;
+               bottom:12px;
+               right:12px;
+           }
+        }
+    }
+}

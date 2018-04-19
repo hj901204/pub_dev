@@ -1,0 +1,266 @@
+html, body, div, h5, h6, p, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+//员工管理
+.manage-box {
+
+    //员工管理 头部
+    .person-manage-top {
+        background-color: #fff;
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        display: flex;
+        flex-direction: column;
+
+        .header-border{
+            width: 100%;
+            border:1px solid #dfdfdf;
+            box-shadow:0 1px 2px 0 rgba(0,0,0,0.14);
+            height:2px;
+        }
+
+        .manage-top-content{
+            width: 100%;
+            padding: 0 19px;
+            
+            .tableHeader{
+                width: 100%;
+                height: 70px;
+                line-height:70px;
+                background-color: #fff;
+                    
+                .head-line-one{
+                    width: 100%;
+                    height: 70px;
+                    line-height: 70px;
+                    overflow: hidden;
+                    position: relative;
+
+                    .slideToRight {
+                        width: 310px;
+                        padding-left: 13px;
+                        box-sizing: border-box;
+                        position: absolute;
+                        top: 0;
+                        left: -300px;
+                        animation: slidetoright 1s ease-in 1;
+                        animation-fill-mode:forwards; 
+
+                        button{
+                            height: 28px;
+                            line-height: 28px;
+                            display: inline-block;
+                            background-color: #7196cb;
+                            border-radius: 4px;
+                            font-size: 14px;
+                            color: #fff;
+                            margin-right: 20px;
+                            padding: 0 10px;
+                            border: 0;
+                        }
+                    }
+
+                    @keyframes slidetoright {
+                        from {
+                            left: -300px;
+                            top: 0;
+                            opacity: 0;
+                        }to {
+                            left: 0;
+                            top: 0;
+                            opacity: 1;
+                        }
+                    }
+                }// end head-line-one
+
+                .head-line-two{
+                    width: 100%;
+                    height: 70px;
+                    line-height: 70px;
+
+                    .depart-info{
+                        max-width: 700px;
+                        float: left;
+                        font-size: 14px;
+                        height: 70px;
+                        line-height: 70px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+
+                    .head-line-search {
+                        width: 185px;
+                        float: right;
+                    }
+
+                    .head-line-btn {
+                        float: right;
+                        margin-left: 20px;
+                        button{
+                            height: 28px;
+                            line-height: 28px;
+                            display: inline-block;
+                            background-color: #7196cb;
+                            border-radius: 4px;
+                            font-size: 14px;
+                            color: #fff;
+                            margin-right: 20px;
+                            padding: 0 10px;
+                            border: 0;
+                        }   
+                    }
+                } //end head-line-two
+            
+                .head-line-three {
+                    height: 70px;
+                    line-height: 70px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .head-line-three > p{
+                        font-size: 14px;
+                        min-width: 500px;
+                    }
+                }// end head-line-three
+            }// end table-header
+        }// end manage-top-content
+    } //end person-manage-top
+
+}//end manage-box
+
+
+//抽屉
+.sidebar {
+    .menu-wrap {
+        .empDetailSidebar {
+            .menu-wrap-header {
+                height: 52px;
+                line-height: 52px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                button {
+                    width: 60px;
+                    height: 28px;
+                    line-height: 28px;
+                    display: inline-block;
+                    background-color: #7196cb;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    color: #fff;
+                    margin-right: 20px;
+                    margin: 12px 20px 15px 0;
+                    padding: 0 14px;
+                    border: 0;
+                }
+
+                .closeSidebar{
+                    width: 40px;
+                    height: 52px;
+                    line-height: 52px;
+                    background:#d6d6d6;
+                    text-align: center;
+                    font-size: 10px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            } // end menu-wrap-header
+
+            .menu-wrap-header-border {
+                background:#f4f4f4;
+                width:100%;
+                height:8px;
+            }
+
+            .menu-wrap-body {
+                width: 100%;
+                padding: 22px 0 0 37px;
+
+                .empTitleImg {
+                    height: 40px;
+                    line-height: 40px;
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    margin-bottom: 31px;
+
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        margin-right: 18px;
+                    }
+
+                    p{
+                        height: 40px;
+                        line-height: 40px;
+                        font-family:PingFangTC-Regular;
+                        font-size:24px;
+                        color:#737373;
+                        letter-spacing:0;
+                    }
+                }// end empTitleImg
+
+                p.infoTitle{
+                    height: 34px;
+                    line-height: 20px;
+                    padding: 7px 0;
+                    box-sizing: border-box;
+                    font-size:14px;
+                    color:#31425b;
+                    letter-spacing:0;
+
+                    span{
+                        display: inline-block;
+                        background:#fe7a10;
+                        width:4px;
+                        height:15px;
+                        margin: 2px 6px 0 0 ;
+                        vertical-align: top;
+                    }
+                }
+
+                .line{
+                    border:1px solid #e1e1e1;
+                    width: 100%;
+                    height:1px;
+                    margin-bottom: 19px;
+                }
+
+                .infoLists {
+                    margin-bottom: 44px;
+                    p{
+                        height: 20px;
+                        line-height: 20px;
+                        font-size: 14px;
+                        margin-bottom: 16px;
+                        color:#737373;
+                        width: 100%;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+
+                        span{
+                            display: inline-block;
+                            width: 70px;
+                            text-align: right;
+                            height: 20px;
+                            line-height: 20px;
+                            margin-right: 20px;
+                        }
+                    }                 
+                }
+            }
+
+        }       
+    }
+}// end sidebar
+
+

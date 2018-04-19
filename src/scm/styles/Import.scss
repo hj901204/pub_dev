@@ -1,0 +1,100 @@
+.upload-dialog{
+    padding-top:14px;
+    .upload-tiitle{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        a{
+            font-size: 14px;
+            text-decoration: underline;
+        }
+    }
+    .dialog-inner{
+        margin-top: 10px;
+        display: flex;
+        .ant-progress-line{
+            margin-top: 5px;
+            width: 120px;
+            margin-left: 20px;
+            .ant-progress-inner{
+                border:1px solid #c5c5c5;
+                background-color: #fff;
+                .ant-progress-bg{
+                    background-color: #7fb2ff;
+                }
+            }
+            
+        }
+        .anticon{
+            margin-top: 5px;
+        }
+        .ant-progress-line>div{
+                display: flex;
+            }
+        Button{
+            background:#f5f5f5;
+            border:1px solid #c5c5c5;
+            border-radius:3px;
+            width:89px;
+            height:29px;
+            font-size: 14px;
+            font-weight: 100;
+        }
+        Button:hover{
+            color: #666;
+        }
+        span{
+            display: flex;
+            .anticon-paper-clip{
+                display: none;
+            }
+            .ant-upload-list-item-name{
+                font-size: 14px;
+                color: #4c80cf;
+                font-weight: 100;
+            }
+            .ant-upload-list-item{
+                margin-top: 3px;
+                .ant-upload-list-item-info{
+                    padding-right:20px;
+                }
+            }
+        }
+    }
+    .upload-alert{
+        margin-top: 40px;
+        p{
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .upload-alert-title{
+            color: #f39c12;
+            margin-bottom: 20px;
+        }
+    }
+}
+.ant-modal-footer .upload-dialog-button{
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+.ant-modal-footer .upload-dialog-button:hover{
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+.upload-dialog-alert{
+    margin-bottom: 30px;
+    p{
+        color: #ff503f;
+        font-size: 14px;
+        margin-bottom: 16px;
+        margin-top: 14px;
+        font-weight: 100;
+    }
+    a{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,97 @@
+$btn-prefix-cls: "#{$ant-prefix}-btn";
+@mixin button-color($color,$background,$border){
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+}
+@mixin button-variant($color,$background,$border){
+    @include button-color($color,$background,$border);
+
+    &:hover,
+    &:focus {
+        @include button-color(lighten($color, 10%), lighten($background, 10%), lighten($border, 10%));
+    }
+    &:active,
+    &.active {
+        @include button-color(darken($color, 5%),darken($background, 5%), darken($background, 5%));
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            @include button-color($btn-disable-color,$btn-disable-bg,$btn-disable-border);
+        }
+    }
+}
+@mixin btn-primary() {
+  @include button-variant($btn-primary-color,$btn-primary-bg,$primary-color);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $btn-primary-color;
+  }
+}
+@mixin btn-ghost() {
+    @include button-variant($btn-ghost-color, $btn-ghost-bg, $btn-ghost-border);
+
+    &:hover,
+    &:focus {
+        @include button-color($primary-color,$btn-ghost-bg, $primary-color);
+    }
+    &:active,
+    &.active {
+        @include button-color(darken($primary-color, 5%),$btn-ghost-bg,darken($primary-color, 5%));
+    }
+}
+
+@mixin btn-noline() {
+    @include button-color($btn-noline-color,$btn-noline-bg,$btn-noline-border);
+    &:hover,
+    &:focus {
+        @include button-color($btn-noline-hover-color, $primary-color, $primary-color);
+    }
+    &:active,
+    &.active {
+        @include button-color($btn-noline-hover-color, $primary-color, $primary-color);
+    }
+}
+
+
+
+// Button styles
+// -----------------------------
+.#{$btn-prefix-cls} {
+  &-primary {
+    @include btn-primary();
+    .#{$btn-prefix-cls}-group &:not(:first-child):not(:last-child) {
+        border-right-color: $btn-group-border;
+        border-left-color: $btn-group-border;
+    }
+    .#{$btn-prefix-cls}-group &:first-child {
+        &:not(:last-child) {
+            border-right-color: $btn-group-border;
+            &[disabled] {
+                border-right-color: $btn-default-border;
+            }
+        }
+    }
+    .#{$btn-prefix-cls}-group &:last-child:not(:first-child),
+    .#{$btn-prefix-cls}-group & + .#{$btn-prefix-cls} {
+        border-left-color: $btn-group-border;
+        &[disabled] {
+            border-left-color: $btn-default-border;
+        }
+    }
+  }
+  &-ghost {
+    @include btn-ghost();
+  }
+  &-noline{
+    @include btn-noline();
+  }
+}

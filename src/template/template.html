@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="<%= htmlWebpackPlugin.options.lux_prefix %>lib/config.js"></script>
+    <script src="<%= htmlWebpackPlugin.options.lux_prefix %>lib/fetch.js"></script>
+    <script src="<%= htmlWebpackPlugin.options.lux_prefix %>lib/es6-promise.auto.js"></script>
+    <script src="<%= htmlWebpackPlugin.options.lux_prefix %>lux.js"></script>
+</head>
+
+<script type="text/javascript">
+    window.htmlWebpackPlugin = "<%= htmlWebpackPlugin.options.filename %>" ;
+</script>
+<body>
+
+    <div id="bodycontext" class='window-content'></div>
+</body>
+
+</html>

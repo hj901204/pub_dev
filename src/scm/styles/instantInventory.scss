@@ -1,0 +1,21 @@
+.instant-inventory-box{
+    padding:0 20px;
+    .instant-inventory-search{
+        border-bottom:3px solid #dfdfdf;
+        box-shadow:0 1px 2px 0 rgba(0,0,0,0.14);
+        margin: 0 -20px;
+        padding-left: 20px;
+        .ant-btn-primary{
+            margin-left: 20px;
+        }
+    }
+    .ant-table-wrapper{
+        margin-top: 20px;
+        .ant-table-content{
+            height: 100%;
+        }
+    }
+    .ant-select-selection__placeholder, .ant-select-search__field__placeholder{
+        color: #666;
+    }
+}

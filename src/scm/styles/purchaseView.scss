@@ -1,0 +1,144 @@
+$border: 1px solid #e2e2e2;
+.PurchaseView-wrap {
+    font-family: PingFangSC-Regular;
+    color: #4b4b4b;
+    margin-top: 12px;
+    .PurchaseView-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 16px 16px;
+        border: $border;
+        .order {
+            height: 26px;
+            line-height: 26px;
+            font-size: 14px;
+            font-family: PingFangSC-Semibold;
+        }
+        .status {
+            height: 24px;
+            line-height: 24px;
+            color: #999999;
+        }
+        .morebtn {
+            margin: 0 4px 0 10px;
+        }
+        .show-more-info {
+            display: block;
+            width: 100px;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 10px;
+            position: absolute;
+            top: 70px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            font-size: 12px;
+            background: #ffffff;
+            text-align: center;
+            border: 1px solid #e2e2e2;
+            border-radius: 10px;
+            color: #999999;
+            z-index: 1;
+        }
+    }
+    .PurchaseView-info {
+        border-left: $border;
+        border-right: $border;
+        border-bottom: $border;
+        ul>li {
+            min-height: 24px;
+            line-height: 24px;
+            span {
+                color: #999999;
+                text-align: right;
+                display: inline-block;
+            }
+        }
+        .header {
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .base-info {
+            padding: 16px 30px 24px 16px;
+            li>span {
+                width: 72px;
+            }
+        }
+        .receive-info {
+            padding: 16px 30px 24px 16px;
+            border-left: $border;
+            border-right: $border;
+            li>span {
+                width: 84px;
+            }
+            .address {
+                margin-left: 84px;
+                margin-top: -24px;
+            }
+        }
+        .other-info {
+            padding: 16px 30px 24px 16px;
+            li>span {
+                width: 60px;
+            }
+            .remarks {
+                margin-left: 60px;
+                margin-top: -24px;
+            }
+        }
+        .show-more-info {
+            position: absolute;
+            right: 12px;
+            bottom: 7px;
+        }
+    }
+    .PurchaseView-remark {
+        border-left: $border;
+        border-right: $border;
+        border-bottom: $border;
+        .header {
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .bayer-info {
+            padding: 16px 12px 30px 16px;
+        }
+        .shop-info {
+            padding: 16px 12px 30px 16px;
+            border-left: $border;
+        }
+    }
+    .PurchaseView-table {
+        .ant-table-title {
+            .tab-title {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 0 10px;
+                .left-text {
+                    color: #4a4a4a
+                }
+                .total {
+                    .laber {
+                        padding-left: 20px;
+                        color: #999999;
+                    }
+                    .number {
+                        color: #fe8010;
+                    }
+                }
+                .c2mfont {
+                    padding-right: 5px;
+                    padding-left: 20px;
+                }
+            }
+        }
+        .PurchaseView-spec {
+            padding-left: 10px;
+        }
+    }
+}

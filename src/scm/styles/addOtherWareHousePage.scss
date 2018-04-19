@@ -1,0 +1,299 @@
+.add-other-box{
+    margin-top: 12px;
+ .add-purchase-title{
+     .add-purchase-name{
+         font-size: 14px;
+         color: #4A4A4A;
+         font-weight: bold;
+     }
+     border:1px solid #E2E2E2;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 22px 16px;
+     height: 80px;
+     .add-purchase-doc-no{
+      .ant-form-item-control {
+          height: 16px;
+      }
+      .ant-form-item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        margin-bottom: 0;
+        .ant-form-item-label{
+            height: 16px;
+            line-height: 16px;
+            label{
+                display: inline-block;
+                height: 16px;
+                line-height: 16px;
+                color: #999999;
+            }
+        }
+        .ant-input{
+            height:16px;
+            line-height: 16px;
+            vertical-align: top;
+        }
+      }
+  }
+     .ant-btn-submit{
+         font-size: 14px;
+         padding: 3px 13px;
+         background:#7196cb;
+         border-radius:4px;
+         color:#fff;
+     }
+     .add-purchase-title-button-save{
+         margin-right: 20px;
+         height: 30px;
+         width: 72px;
+         color: #fff;
+         background-color: #6d8ec1;
+         border-color: #6d8ec1;
+         .add-save-icon{
+                font-size: 12px;
+                padding-right: 7px;
+          }
+     }
+     .add-purchase-title-button-save:hover{
+        background: #fff;
+        color: #108ee9;
+     }
+     .add-purchase-title-button-return{
+         height: 30px;
+         width: 72px;
+         color: #fff;
+         background-color: #6d8ec1;
+         border-color: #6d8ec1;
+         .add-return-icon{
+               font-size: 12px;
+               margin-right: 7px;
+               transform: rotate(90deg);
+               -moz-transform:rotate(90deg);
+               -webkit-transform:rotate(90deg);
+               display: inline-block;
+         }
+     }
+      .add-purchase-title-button-return:hover{
+        background: #fff;
+        color: #108ee9;
+     }
+     h3{
+         font-size: 14px;
+         color: #4A4A4A;;
+     }
+  }
+  
+  .add-other-info{
+    padding: 10px 0px 30px 16px;
+    border: 1px solid #E2E2E2;
+    border-top: none;
+    .add-ware-housing-ant-form{
+         .ant-form-item{
+            margin-left: 80px;
+         }
+         .add-warehousing-h{
+             margin-left: 90px;
+         }
+    }
+    .add-ware-housing-remark-form{
+        .ant-form-item{
+            margin-left: 80px;
+            .ant-input-textarea-second{
+             width:672px;
+         }
+         }
+    }
+    .add-purchase-info-up{
+        display: flex;
+        .add-purchase-info-item{
+            width: 345px;
+            display: flex;
+            flex-direction: column;
+            margin-right:60px;
+            .add-purchase-antd-margin{
+                margin-left: 45px;
+            }
+            .ant-form-item{
+                display: flex;
+                flex-direction: row;
+                flex-wrap:nowrap;
+                margin-bottom: 0px;
+                margin-top: 20px;
+                .ant-form-item-label{
+                    label{
+                        width: 82px;
+                        display: inline-block;
+                        color: #999999;
+                    }
+                }
+
+                .ant-select{
+                    width:198px;
+                    height:29px;
+                    margin-left: 10px;
+                }
+                .ant-input{
+                    border:1px solid #c5c5c5;
+                    border-radius:3px;
+                    width:198px;
+                    height:29px;
+                    margin-left: 10px;
+                }
+                .ant-input-textarea{
+                    resize: none;
+                    height: 85px;
+                    overflow: auto;
+                    width: 458px;
+                }
+                .ant-select-search__field{
+                    margin-left: 0px;
+                }
+                .ant-input-textarea-source{
+                    height: 78px;
+                    resize: none;
+                }
+            }
+        }
+         .add-purchase-record-item{
+             width: 800px;
+            .ant-form-item{
+                 margin-top: 38px;
+                .ant-form-item-label{
+                    label{
+                        width: 60px;
+                        display: inline-block;
+                        color:#999999;
+                    }
+                }
+            }
+        }
+    }
+    .add-purchase-info-down{
+        margin-top: 35px;
+    }
+  }
+  .add-purchase-info-last{
+    .ant-form-item{
+                display: flex;
+                flex-direction: row;
+                flex-wrap:nowrap;
+                margin-bottom: 0px;
+                margin-top: 20px;
+                .ant-form-item-label{
+                    width: 70px;
+                }
+            .ant-input-textarea-second{
+                resize: none;
+                width: 779px;
+                height: 80px;
+                overflow: auto;
+                margin-left: 10px;
+                padding: 0px;
+            }
+    }
+  }
+  .add-purchase-order-info{
+      margin-top: 20px;
+      h3{
+          color: #4A4A4A;
+          font-size: 14px;
+      }
+  }
+  .ant-table-wrapper{
+      padding: 20px;
+  }
+
+}
+
+.take-order-search-dropdow {
+  .ant-select-dropdown-menu-item-group-title {
+    font-size:12px;
+    color:#4b4b4b;
+  }
+  .ant-select-dropdown-menu-item {
+     height: 60px;
+     padding: 0;
+     padding-left: 10px;
+    .dropdown-title{
+      color: #4b4b4b;
+      height: 30px;
+      line-height: 30px;
+    }
+    .dropdown-content{
+      height: 30px;
+      line-height: 30px;
+    }
+    font-size:12px;
+    color: #4b4b4b;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .ant-select-dropdown-menu-item.show-all {
+    text-align: center;
+    cursor: default;
+  }
+}
+.add-row-other-table{
+    .add-row-other-table-title{
+        position: relative;
+        top: 21px;
+        left: 0;
+        color: #4a4a4a;
+        font-size: 14px;
+    }
+    .contactBtn{
+        margin: 20px 0px 20px 20px;
+    }
+    // .addOtherWarePageTable{
+    //     margin: 0px 20px 30px 20px
+    // }
+    .addohter-table-operation{
+        text-align: center;
+        div{
+            a:nth-child(2){
+                i{
+                     margin-right: 0px !important;
+                }
+            }
+        }
+    }
+}
+.take-production-search-dropdow{
+    .ant-select-dropdown-menu-item{
+        height: 30px;
+    }
+}
+.table-materialCode-style{
+      .a-editStyle{
+        display: inline-block;
+        width: 100%;
+        height: 26px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        background-color: #fff;
+        line-height: 26px;
+        text-align: left;
+        padding: 0 7px;
+        position: relative;
+        .a-dialog-btn {
+            display: inline-block;
+            width: 26px;
+            height: 24px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 0px 7px;
+            border-left: 1px solid #d9d9d9;
+            color: rgba(0,0,0,0.65);
+            background-color: #eee;
+        }
+      }
+        .materialCodeTips{
+        margin-top: 3px;
+        margin-left: 7px;
+        color: red;
+        font-size: 12px;
+    }
+}

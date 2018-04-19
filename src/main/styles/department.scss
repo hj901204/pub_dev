@@ -1,0 +1,68 @@
+$sideBarColor:#4b4b4b;
+.deptSidebar{
+    font-size:14px;
+    color:$sideBarColor;
+    .sidebox{
+        height:60px;
+        border-bottom:1px solid #ccc;
+        .sidetitle{
+            b{
+                padding:20px 0 20px 35px;
+                display: inline-block;
+            }
+            .ant-btn-primary {
+                margin-right: 20px;
+            }
+            .sidebutton{
+                text-align:right;
+                height: 60px;
+                line-height: 60px;
+            }
+            .xicon{
+                float: right;
+                height: 60px;
+                width: 50px;
+                line-height: 60px;
+                text-align: center;
+                background:#ccc;
+                margin-left:6px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .side-Center{
+        height:115px;
+        width:600px;
+        margin-left:46px;
+        margin-top:30px;
+        .ant-row{
+            margin-bottom: 10px
+        }
+        .side-Center-box{
+            .ant-row{
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .side-Line{
+        border:1px;
+        background-color:#e1e1e1;
+        width:629px;
+        height: 1px;
+        margin-top: 30px;
+    }
+    .side-Bottom{
+        margin-top: 20px;
+        margin-left:46px;
+        .ant-row{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .side-Bottom-name{
+            text-align: right;
+            margin-right: 20px;
+        }
+    }
+}

@@ -1,0 +1,400 @@
+.otherwarehouse-carryout{
+        .purchase-eidt {
+        margin-top: 12px;
+        .purchase-eidt-title{
+            border:1px solid #dfdfdf;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px;
+            color:#4b4b4b;
+            line-height: 40px;
+            .title-box{     
+                .title-allInfo{
+                    height: 20px;
+                    line-height: 20px;
+                    font-family:PingFangSC-Regular;
+                    font-size:14px;
+                    letter-spacing:-0.39px;
+                    text-align:left;
+                    color: #000;
+                    margin-bottom: 8px;
+                }
+                .title-detailInfo{
+                    height: 20px;
+                    line-height: 20px;
+                    font-family: PingFangSC-Regular;
+                    font-size:12px;               
+                    letter-spacing:-0.34px;
+                    text-align:left;
+                    span{
+                        margin-right: 40px;
+                    }
+                }
+            }
+            .ant-btn-default {
+                font-size: 14px;
+                padding: 0px 13px;
+                color:#fff;
+                background:#4C80CF;
+                border-color: #4C80CF;
+                border-radius:4px;
+                height:28px;
+                margin-top: 4px;
+            }
+            
+            .ant-btn-default:hover{
+                background-color: #fff;
+                color: #108ee9;
+            }
+             
+            .ant-btn-default{
+                >span{  // iconfont
+                    i{
+                        font-size: 12px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .more-operation-btn{ // 更多操作按钮
+                background: #FFFFFF;
+                border: 1px solid #4C80CF;
+                border-radius: 4px;
+                font-size: 12px;
+                color: #4C80CF; 
+
+                span:first-child{
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                span.ant-select-arrow{
+                    font-size: 12px;
+                    display: inline-block;
+                }
+            }
+
+        }// end title
+
+        .purchase-eidt-doc-no{
+            padding: 10px 44px;
+            border-bottom: 1px solid #dfdfdf;
+            .ant-form-item{
+                margin-bottom: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap:nowrap;
+                .ant-input{
+                    background:#ecedf1;
+                    border:1px solid #c5c5c5;
+                    border-radius:3px;
+                    width:200px;
+                    height:30px;
+                    margin-left: 10px;
+                    color: #4b4b4b;
+                }
+            }
+        } // end 单据号
+
+        .purchase-eidt-info{
+            padding: 30px 20px;
+            // border: 1px solid #e2e2e2;
+            border-top: 0;
+            display: flex;
+            .purchase-eidt-info-item {
+                display: flex;
+                flex-direction: column;
+                .ant-form-item{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap:nowrap;
+                    margin-bottom: 0px;
+                    margin-top: 12px;
+                    .ant-form-item-label{
+                        width: 85px;
+                    }
+                    .ant-input{
+                        background:#ecedf1;
+                        border:1px solid #c5c5c5;
+                        border-radius:3px;
+                        width:200px;
+                        height:30px;
+                        margin-left: 10px;
+                        color: #4b4b4b;
+                    }
+                    .ant-input-textarea{
+                        background-color: #fff;
+                        resize: none;
+                        width: 458px;
+                        height: 80px;
+                        overflow: auto;
+                    }
+                }
+
+                .info-p{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap:nowrap;
+                    margin-bottom: 0px;
+                    margin-top: 12px;
+                    font-size: 12px;
+                    .info-p-label{
+                        width: 95px;
+                        text-align: right;
+                        color: #999;
+                    }
+                    .info-p-data{
+                        color: #4b4b4b;
+                        text-align: left;
+                        margin-left: 10px;
+                    }
+                }
+
+                .form-info-style{
+                    // margin-top: 17px;
+                }
+
+                .purchase-eidt-putaway-info{ // 隐藏更多信息
+                    height: 34px;
+                    line-height: 34px;
+                    text-align: right;
+                    margin-right: 20px;
+                }
+            }
+        }       
+
+        .purchase-eidt-info-show{
+            display: block;
+            border: 1px solid #e2e2e2;
+            border-top: 0;
+        }
+        .purchase-eidt-info-hide{
+            display: none;
+        }
+
+        // 收起 / 展开
+        .sale-carryout-doc-no{
+            position: absolute;
+            top: 75px;
+            width: 98px;
+            height: 24px;
+            border: 1px solid #e2e2e2;
+            border-radius: 20px;
+            left: 50%;
+            margin-left: -50px;
+            color:#999;
+            text-align: center;
+            line-height: 24px;
+            background-color:#fff;
+            cursor: pointer;
+        }
+
+        
+    }
+
+    .ant-tabs{
+        margin-top: 15px;
+        .ant-tabs-content{
+            margin-top: 12px;
+
+            .ant-table-tbody, // 行号、操作列居中
+            .ant-table-thead{
+                >tr{
+                    .table-thead-center{   
+                        text-align: center;
+                        color: #4a4a4a;
+                        .iconstyle{
+                            cursor: pointer;
+                            text-align: center;
+                            border: 1px solid #9d9d9d;
+                            color: #9d9d9d;
+                            border-radius: 50%;
+                            font-size: 16px;
+                            width: 18px;
+                            height: 18px;
+                            line-height: 18px;
+                            display: inline-block;
+                        }
+
+                        .iconstyle:hover{
+                            background-color: #5284d1;
+                            color: #fff;
+                            border: 1px solid #5284d1;
+                            font-size: 16px;
+                        }
+                    }
+
+                    >th:first-child{
+                        padding-left: 0;
+                    }
+                    >td:first-child{
+                        padding-left: 0
+                    }
+                }      
+                
+                .th-padding{
+                    padding-left: 10px;
+                }   
+            }
+        }
+    }
+
+}// end .otherwarehouse-carryout
+
+.carryout-close-btn{
+    background-color: #7196cb;
+    color: #fff;
+}
+
+.otherWarehouse-dialog-box{    // 8.21 之前的物料选择弹窗
+    .ant-modal-body{
+        padding: 20px;
+        padding-top: 0;
+        .pre-receipt-dialog{
+            .pre-receipt-dialog-title{
+                padding: 20px 40px;
+                border-bottom: 1px solid #d5d5d5;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .pre-receipt-dialog-title-left-up{
+                    font-size: 14px;
+                    line-height: 20px;
+                    span{
+                        margin-right: 30px;
+                    }
+                }
+                .pre-receipt-dialog-title-left-down{
+                    font-size: 12px;
+                    line-height: 20px;
+                    span{
+                        margin-right: 30px;
+                    }
+                }
+                .pre-receipt-dialog-title-right{
+                    width: 120px;
+                    line-height: 20px;
+                    text-align: right;
+                    .receipt-number{
+                        color: #ff494b;
+                    }
+                    .distribute-number{
+                        color: #45d448;
+                    }
+                }
+            }
+
+            .formInTable{
+                padding: 0 40px;
+            }
+
+            .ant-table-wrapper{
+                td{
+                    .ant-form-item{
+                        margin-bottom: 0;
+                    }
+                }
+                .td-operation{
+                    a {
+                        width: 38px;
+                        margin-right: 9px;
+                    }
+                }
+            }
+
+            .ant-select-disabled{
+                .ant-select-selection{
+                    background-color:#ffffff;
+                    color: #666;
+                }
+            }
+
+        }
+    }
+}
+
+.otherwarehouse-edittable{   // 可编辑表格
+    // position: relative;
+    .formInTable{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .edittable-title{
+        position: relative;
+        top: 15px;
+        left: 0;
+        color: #4a4a4a;
+        font-size: 14px;
+    }
+    .a-editStyle{
+        display: inline-block;
+        width: 100%;
+        height: 26px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        background-color: #fff;
+        line-height: 26px;
+        text-align: left;
+        padding: 0 7px;
+        position: relative;
+        .a-dialog-btn {
+            display: inline-block;
+            width: 26px;
+            height: 24px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 0px 7px;
+            border-left: 1px solid #d9d9d9;
+            color: rgba(0,0,0,0.65);
+            background-color: #eee;
+        }
+    }
+    .materialCodeTips{
+        margin-top: 3px;
+        margin-left: 7px;
+        color: red;
+        font-size: 12px;
+    }
+
+    .ant-table-tbody, // 行号、操作列居中
+        .ant-table-thead{
+            >tr{
+                .table-thead-center{
+                    text-align: center;
+                    color: #4a4a4a;
+                    .editable-row-operations{
+                        display: flex;
+                        justify-content: space-around;
+                        >span{
+                            display: inline-block;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    
+}
+
+.otherwarehouse-material-dialog{   // 物料编码选择弹出窗
+    .material-edit-dialog{
+        >form{
+            >.ant-row{
+                margin-bottom: 10px;
+                >.ant-col-14{
+                    input.noborder-input{
+                        // min-width: 200px;
+                        border: 0;
+                        background: #fff;
+                        padding-left: 10px;
+                        color: #4b4b4b;
+                    }
+                }
+                
+            }
+        }
+    }
+}

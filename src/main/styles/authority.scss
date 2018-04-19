@@ -1,0 +1,91 @@
+@keyframes operable-show {
+  from {
+    left:-100px;
+  }
+  to {
+    left:0;
+  }
+}
+@keyframes operable-hide {
+  from {
+    left:0;
+  }
+  to {
+    left:-100px;
+  }
+}
+.authority-content{
+  .authority-operation-bar{
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+  }
+}
+.authority-sidebar{
+  .top-handle-bar{
+    height:50px;
+    border-bottom: 5px solid #f3f3f3;
+    .authority-name{
+      float:left;
+      width:100px;
+      margin:15px 10px;
+      vertical-align: center;
+    }
+    .del-role{
+      float:right;
+      margin:8px 20px 8px 0;
+    }
+    .hide-btn{
+      width:40px;
+      height:45px;
+      float:right;
+      background-color: #ccc;
+      text-align:center;
+      line-height: 45px;
+    }
+  }
+  .menber-handle{
+    height:40px;
+    overflow: hidden;
+    position:relative;
+    .operable-show{
+      position:absolute;
+      animation:operable-show 0.5s;
+      animation-fill-mode:forwards;
+    }
+    .operable-hide{
+      position:absolute;
+      animation:operable-hide 0.5s;
+      animation-fill-mode:forwards;
+    }
+    .operable-box{
+      float:left;
+      margin-right:20px;
+    }
+    .menber-search{
+      float:left;
+    }
+    .menber-add{
+      float:right;
+    }
+  }
+  .authority-menber{
+    width:90%;
+    margin:auto;
+  }
+  .authority-detail{
+    width:90%;
+    margin:auto;
+    .detail-form{
+      width:75%;
+      float:left;
+    }
+    .detail-save{
+      float:right;
+    }
+    hr{
+      clear:both;
+      border:1px solid #dcdcdc;
+    }
+  }
+}

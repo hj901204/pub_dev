@@ -1,0 +1,115 @@
+.sidebar{
+    width: 20%;
+}
+.import-employ{
+    padding-left: 20px;
+    .impt-title{
+        height: 50px;
+        line-height: 50px;
+    }
+    .repaly-submit{
+        display: block;
+        float:left;
+        margin-right:20px;
+        margin-top:10px;
+    } 
+    .repaly-text{
+        float: left;
+    }
+}
+.error-message{
+    color:#ff0000;
+    cursor: pointer;
+}
+.upload-dialog{
+    .dialog-inner{
+        margin-left: 10px;
+        .upload-form{
+            .upload-label,.upload-btn,.upload-text{
+                vertical-align: middle;
+                display: inline-block;
+            }
+            .upload-label label{
+                width:58px;
+                height: 17px;
+                padding:0;
+                margin-right: 15px;
+            }
+            .upload-label,.upload-text{
+                font-size: 14px;
+                padding: 5px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .upload-text-width{
+                width: 187px;
+            }
+            .upload-label{
+                text-align:left;
+                label{
+                    font-size: 14px;
+                }
+            }
+            .text-box{
+                padding: 0px 10px;font-size: 12px;
+                .ant-form-text{
+                    color:#979797;
+                }
+            
+            }
+            .upload-btn{
+                .ant-upload{
+                    float: right;
+                    margin-left: 5px;
+                }
+                .ant-upload-list-text{
+                    background-color: #fff;
+                    min-height: 28px;
+                    color: #666;
+                    background-image: none;
+                    border: 1px solid #d9d9d9;
+                    border-radius: 4px;
+                    -webkit-transition: all .3s;
+                    transition: all .3s;
+                }
+                .ant-upload-list{
+                    .ant-upload-list-item{
+                        margin-top: 0;
+                    }
+                    .ant-upload-list-item-info{
+                        height: 28px;
+                        line-height: 28px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        position: relative;
+                        .anticon-cross{
+                            line-height: 28px;
+                            position: absolute;
+                            right: 2px;
+                            top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        .upload-tip{
+            margin-top: 30px;
+            .tip-title{font-size: 12px;color:rgba(255,80,63, 1);margin-bottom: 4px;}
+            .tip-item{
+                margin-top: 31px;
+                color:#4b4b4b;
+            }
+            .tip-item-two{
+                margin-top: 16px;
+                color:#4b4b4b;
+            }
+        }
+    }
+    .ant-modal-footer{
+        .ant-btn{
+            font-size: 14px;
+        }
+    }
+}

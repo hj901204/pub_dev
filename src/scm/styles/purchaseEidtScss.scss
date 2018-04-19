@@ -1,0 +1,415 @@
+.purchaseEidt{
+    .purchase-eidt {
+        margin-top: 12px;
+        .purchase-eidt-title{
+            border:1px solid #dfdfdf;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px;
+            color:#4b4b4b;
+            line-height: 37px;
+            .title-box{      
+                .title-allInfo{
+                    height: 20px;
+                    line-height: 20px;
+                    font-family:PingFangSC-Medium;
+                    font-size:14px;
+                    letter-spacing:-0.39px;
+                    text-align:left;
+                    color: #000;
+                    margin-bottom: 8px;
+                }
+                .title-detailInfo{
+                    height: 17px;
+                    line-height: 17px;
+                    font-family: PingFangSC-Regular;
+                    font-size:12px;               
+                    letter-spacing:-0.34px;
+                    text-align:left;
+                    span{
+                        margin-right: 10px;
+                    }
+                    
+                }
+            }
+            .ant-btn-default {
+                font-size: 14px;
+                padding: 0px 13px;
+                color:#fff;
+                background:#4C80CF;
+                border-radius:4px;
+                border-color: #4C80CF;
+                height:28px;
+                margin-top: 4px;
+                margin-left: 10px;             
+            }
+
+            .ant-btn-default:hover{
+                background-color: #fff;
+                color: #108ee9;
+            }
+
+            .ant-btn-default{
+                >span{  // iconfont
+                    i{
+                        font-size: 12px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .more-operation-btn{ // 更多操作按钮
+                background: #FFFFFF;
+                border: 1px solid #4C80CF;
+                border-radius: 4px;
+                font-size: 12px;
+                color: #4C80CF; 
+
+                span:first-child{
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                span.ant-select-arrow{
+                    font-size: 12px;
+                    display: inline-block;
+                }
+            }
+
+
+
+            // .close-btn{ // 关闭按钮
+            //     border:1px solid #e2e2e2;
+            //     border-radius:4px;
+            //     width:72px;
+            //     height:29px;
+            //     font-size:12px;
+            //     color:#9b9b9b;
+            //     background: #fff;
+            // }
+        }// end title
+
+        .purchase-eidt-doc-no{
+            padding: 12px 44px;
+            border-bottom: 1px solid #dfdfdf;
+            .ant-form-item{
+                margin-bottom: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap:nowrap;
+                .ant-input{
+                    background:#ecedf1;
+                    border:1px solid #c5c5c5;
+                    border-radius:3px;
+                    width:198px;
+                    height:29px;
+                    margin-left: 10px;
+                    color: #4b4b4b;
+                }
+            }
+        } // end 单据号
+        .returnmaterial-eidt-info,
+        .purchase-eidt-info{
+            height: 160px;
+            border-bottom: 1px solid #e2e2e2;
+            
+            .purchase-eidt-info-item {
+                display: flex;
+                flex-direction: column;
+                h3{
+                    font-family:PingFangSC-Semibold;
+                    font-size:14px;
+                    color:#31425b;
+                    letter-spacing:-0.39px;
+                    text-align:left;
+                    position: relative;
+                    padding-left: 10px;
+                }
+                .info-p{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap:nowrap;
+                    margin-bottom: 0px;
+                    margin-top: 12px;
+                    font-size: 12px;
+                    .info-p-label{
+                        width: 85px;
+                        text-align: right;
+                        color: #999;
+                        display: inline-block;
+                    }
+                    .info-p-data{
+                        color: #4b4b4b;
+                        text-align: left;
+                        margin-left: 10px;
+                    }
+                }
+
+                .purchase-eidt-putaway-info{ // 隐藏更多信息
+                    height: 34px;
+                    line-height: 34px;
+                    text-align: right;
+                    margin-right: 20px;
+                }
+            }
+        }
+        .purchase-eidt-info-show{
+            display: block;
+        }
+        .purchase-eidt-info-hide{
+            display: none;
+        }
+
+        // 收起 / 展开
+        .sale-carryout-doc-no{
+            position: absolute;
+            top: 75px;
+            width: 98px;
+            height: 24px;
+            border: 1px solid #e2e2e2;
+            border-radius: 20px;
+            left: 50%;
+            margin-left: -50px;
+            color:#999;
+            text-align: center;
+            line-height: 24px;
+            background-color:#fff;
+            cursor: pointer;
+        }
+        
+        .purchase-eidt-info>div{
+            height: 160px;
+        }
+
+        .returnmaterial-eidt-info{
+            height: 142px;
+            >div{
+                height: 142px;
+            }
+        }
+
+        .returnmaterial-eidt-info>div,
+        .purchase-eidt-info>div{  
+            padding: 20px;
+            border: 1px solid #e2e2e2;
+            border-top: 0;
+        }
+        .returnmaterial-eidt-info>div:first-child,
+        .purchase-eidt-info>div:first-child{
+            border-right: 0;
+        }
+        .returnmaterial-eidt-info>div:last-child,
+        .purchase-eidt-info>div:last-child{
+            border-left: 0;
+        }
+
+        .purchase-eidt-sourceInfo{
+            padding: 20px;
+            border: 1px solid #e2e2e2;
+            border-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 0;
+            .ant-form-item-label{
+                width: 85px;
+                label{
+                    color: #999;
+                }
+            }
+            
+            .info-p{
+                width:100%;
+                margin-bottom: 16px;
+                .info-p-label{
+                    width: 85px;
+                    text-align: right;
+                    color: #999;
+                    display: inline-block;
+                }
+                .info-p-data{
+                    color: #4b4b4b;
+                    text-align: left;
+                    margin-left: 10px;
+                }
+            }
+
+            .ant-input-textarea-second{
+                background:#fff;
+                border:1px solid #c5c5c5;
+                border-radius:3px;
+                resize: none;
+                width: 90%;
+                height: 56px;
+                margin-left: 10px;
+                overflow: auto;
+                color: #4b4b4b;
+            }
+
+            .ant-form-explain{
+                margin-left: 95px;
+            }
+
+            .editable-remarks { // 生产入库单-可编辑-备注
+                background-color: #fff;
+            }    
+        }
+
+        .purchase-eidt-sourceInfo-show{
+            display: block;
+        }
+        .purchase-eidt-sourceInfo-hide{
+            display: none;
+        }
+
+    }
+
+    .ant-tabs{
+        margin-top: 15px;
+        .ant-tabs-content{
+            margin-top: 12px;
+
+            .ant-table-tbody, // 行号、操作列居中
+            .ant-table-thead{
+                >tr{
+                    .table-thead-center{    //td
+                        text-align: center;
+                        color: #4a4a4a;
+
+                        // 预收货
+                        .iconstyle{
+                            cursor: pointer;
+                            text-align: center;
+                            border: 1px solid #9d9d9d;
+                            color: #9d9d9d;
+                            border-radius: 50%;
+                            font-size: 16px;
+                            width: 18px;
+                            height: 18px;
+                            line-height: 18px;
+                            display: inline-block;
+                        }
+
+                        .iconstyle:hover{
+                            background-color: #5284d1;
+                            color: #fff;
+                            border: 1px solid #5284d1;
+                            font-size: 16px;
+                        }
+
+                    }
+
+                    >th:first-child{
+                        padding-left: 0;
+                    }
+                    >td:first-child{
+                        padding-left: 0
+                    }
+                }
+
+                .th-padding{
+                    padding-left: 10px;
+                }
+            }
+
+        }
+    }
+}
+
+
+.pre-receive-dialog-box{
+
+    .ant-modal-body{
+        // padding-top: 20px;
+        padding: 20px;
+        padding-top: 0;
+        .pre-receipt-dialog{
+            .pre-receipt-dialog-title{
+                // padding: 20px 60px;
+                // padding-top: 0;
+                // margin: 0 -60px;
+                // border-bottom: 1px solid #d5d5d5;
+                // display: flex;
+                // justify-content: space-between;
+                // margin-bottom: 20px;
+
+                padding: 20px 40px;
+                border-bottom: 1px solid #d5d5d5;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                .pre-receipt-dialog-title-left-up{
+                    font-size: 14px;
+                    line-height: 20px;
+                    span{
+                        margin-right: 30px;
+                    }
+                }
+                .pre-receipt-dialog-title-left-down{
+                    font-size: 12px;
+                    line-height: 20px;
+                    span{
+                        margin-right: 15px;
+                    }
+                }
+                .pre-receipt-dialog-title-right{
+                    line-height: 20px;
+                    text-align: right;
+                    .receipt-number{
+                        color: #fe8010;
+                    }
+                    .distribute-number{
+                        color: #5cb85c;
+                    }
+                }
+            }// end title
+
+            .formInTable{
+                padding: 0 40px;
+            }
+
+            .ant-table-wrapper{
+                td{
+                    .ant-form-item{
+                        margin-bottom: 0;
+                    }
+                }
+                .td-operation{
+                    a {
+                        width: 38px;
+                        margin-right: 9px;
+                    }
+                }
+            }
+
+            .ant-select-disabled{
+                .ant-select-selection{
+                    background-color:#ffffff;
+                    color: #666;
+                }
+            }
+
+        }// end dialog
+    }
+}
+
+.select-auto-complete{
+    width: 200px !important;
+    background-color: #ffffff;
+    .auto-complete-option{
+        width: 180px;
+        padding: 0;
+        .auto-complete-option-p{
+            height: 30px;
+            width: 180px;
+            line-height: 30px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            span{
+                margin-right: 8px;
+            }
+        }
+        .auto-complete-option-border{
+            border-top:0.5px solid #e2e2e2;
+            width:199.5px;
+            height:0.5px;
+        }
+    }    
+}

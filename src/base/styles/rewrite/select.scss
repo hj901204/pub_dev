@@ -1,0 +1,30 @@
+// Select styles
+$select-prefix-cls: "#{$ant-prefix}-select";
+.#{$select-prefix-cls} {
+    &:hover {
+        @include hover();
+    }
+    .#{$select-prefix-cls}-focused &,
+    &:focus,
+    &:active {
+        @include active();
+    }
+    &-open {
+        .#{$select-prefix-cls}-selection {
+            @include active();
+        }
+    }
+    &-selection {
+        &:hover {
+            @include hover();
+        }
+        .#{$select-prefix-cls}-focused &,
+        &:focus,
+        &:active {
+            @include active();
+        }
+    }
+    &-dropdown-menu-item {
+        line-height: 1.6;
+    }
+}

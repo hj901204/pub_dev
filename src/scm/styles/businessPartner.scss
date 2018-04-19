@@ -1,0 +1,119 @@
+.ew-layout-content {
+    .ew-tabs {
+        .ant-tabs-nav {
+            margin-left: 0;
+        }
+        .ant-tabs {
+            overflow: visible;
+            .ant-tabs-content {
+                .ant-tabs-tabpane {
+                    .Bussiness-PartnerComp {
+                        .Business-Title {
+                            background: #FFFFFF;
+                            // border-radius: 3px;
+                            height: 102px;
+                            border: 1px solid #E2E2E2;
+                            padding: 14px 0 0 16px;
+                            // -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+                            // -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+                            // box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+                            .Bussiness-BigTitle h2 {
+                                padding-bottom: 8px;
+                                font-size: 14px;
+                                color: #4A4A4A;
+                            }
+                            .Bussiness-SmallTitle {
+                                // height: 24px;
+                                font-size: 12px;
+                                color: #999;
+                                p{
+                                    padding-bottom: 6px;
+                                }
+                            }
+                        }
+                        .business-table {
+                            .ant-tabs-bar {
+                                .ant-tabs-nav-container {
+                                    overflow: visible;
+                                    .ant-tabs-nav-wrap {
+                                        overflow: visible;
+                                        background: #f1f1f1;
+                                        .ant-tabs-nav-scroll {
+                                            overflow: visible;
+                                        }
+                                    }
+                                }
+                            }
+                            .ant-tabs-content {
+                                .ant-tabs-tabpane {
+                                    padding: 20px 0;
+                                    background: #FFFFFF;
+                                    .ant-table-wrapper {
+                                        // border: 1px solid #e2e2e2;
+                                        // border-radius: 1px;
+                                    }
+                                }
+                            }
+                            .ant-table-thead {
+                                tr {
+                                    .textAlignCenter{
+                                        text-align: center;
+                                    }
+                                    .firstColCenter{
+                                        text-align: center;
+                                        padding-left: 0;
+                                    }
+                                    th {
+                                        // text-align: center;
+                                    }
+                                }
+                            }
+                            .ant-table-tbody {
+                                tr {
+                                    .firstColCenter{
+                                        text-align: center;
+                                        padding-left: 0;
+                                    }
+                                }
+                            }
+                            // .ant-tabs-ink-bar{
+                            //     height: 35px !important;
+                            // }
+                        }
+                        .Bussiness-conventional {
+                            background: #FFFFFF;
+                            .business-conventionalBase {
+                                border: 1px solid #e2e2e2;
+                                border-top: 0;
+                                margin-bottom: 20px;
+                                .ant-row {
+                                    
+                                    ul{
+                                        font-size: 12px;
+                                        color: #676767;
+                                        padding: 14px 0 20px 16px;
+                                        li{
+                                            line-height: 24px;
+                                            b{
+                                                color: #4b4b4b;
+                                                width: 120px;
+                                                text-align: right;
+                                                font-weight: normal;
+                                                display: inline-block
+                                            }
+                                        }
+                                    }
+                                    .conventional-right {
+                                        color: #4a4a4a;
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

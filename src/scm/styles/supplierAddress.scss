@@ -1,0 +1,27 @@
+.chooseaddress{
+    .ant-modal-content{
+        .ant-modal-body{
+            padding: 20px 20px 30px;
+        }
+        .supplierAddress-content{
+            .supplierAddress-head{
+                line-height: 68px;
+            }
+            .chooseAddress-body,.createAddress-body{
+                overflow: hidden;
+                .ant-btn{
+                    float: right;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+                .ant-table-header{
+                    overflow: hidden;
+                    height: 70px;
+                }
+            }
+        }
+    }
+    
+}
+
+

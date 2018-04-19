@@ -1,0 +1,58 @@
+$dialog-prefix-cls: "#{$ant-prefix}-modal";
+$dialog-btn-color:#4C80CF;
+.#{$dialog-prefix-cls} {
+    &-close-x {
+        height: 51px;
+        line-height: 51px;
+        font-size: 18px;
+    }
+    &-content {
+        border-radius: $border-radius-base;
+    }
+    &-header {
+        padding: 15px 0px;
+        margin: 0px 20px;
+        border-radius: $border-radius-base $border-radius-base 0 0;
+        background: #fff;
+        color: #4A4A4A;
+        font-weight: bold;
+        border-bottom: solid 1px #E7E8EA;
+    }
+    &-body {
+        padding: 30px 60px;
+    }
+    &-footer {
+        border-top-color: $border-color-split;
+        padding: 6px 12px 30px 10px;
+        border-radius: 0 0 $border-radius-base $border-radius-base;
+        border-top-color: #fff;
+        text-align: center;
+        font-size: 12px;
+        .#{$ant-prefix}-btn-primary {
+         /*   width: 80px;*/
+            height: 28px;
+            @include button-color(#FFFFFF, $dialog-btn-color, $dialog-btn-color);
+            &:hover,
+            &:focus {
+                @include button-color(#FFFFFF, lighten($dialog-btn-color, 10%), lighten($dialog-btn-color, 10%));
+            }
+            &:active,
+            &.active {
+                @include button-color(#FFFFFF, darken($dialog-btn-color, 5%), darken($dialog-btn-color, 5%));
+            }
+        }
+        .#{$ant-prefix}-btn-ghost {
+          /*  width: 80px;*/
+            height: 28px;
+            color: #7095CD;
+            border-color: transparent;
+            &:hover,
+            &:focus {
+                @include button-color(lighten(#292d37, 20%), transparent, $border-color-base);
+            }
+        }
+        button+button {
+            margin-left: 12px;
+        }
+    }
+}

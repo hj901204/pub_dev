@@ -1,0 +1,57 @@
+.purchase-order-implement{
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid #9d9d9d;
+        color: #9d9d9d;
+        border-radius: 50%;
+        font-size: 16px;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        margin-right: 10px;
+        vertical-align: bottom;
+    }
+    .purchase-order-implement:hover{
+        background-color: #5284d1;
+        color: #fff;
+        border: 1px solid #5284d1;
+        font-size: 16px;
+     }
+     .purchase-order-implement-delete{
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid #9d9d9d;
+        color: #9d9d9d;
+        border-radius: 50%;
+        font-size: 16px;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+     }
+     .purchase-order-implement-delete:hover{
+        background-color: #5284d1;
+        color: #fff;
+        border: 1px solid #5284d1;
+        font-size: 16px;
+     }
+     .purchase-double-line{
+         margin-right: 10px;
+         width: 18px;
+         height: 18px;
+         text-align: center;
+         display: inline-block;
+     }
+     .purchase-double-line-delete{
+         width: 18px;
+         height: 18px;
+         text-align: center;
+         display: inline-block;
+     }
+    .purchaselist-oeration{
+        text-align: center;
+        div{
+            text-align: center;
+        }
+    }

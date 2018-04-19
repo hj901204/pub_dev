@@ -1,0 +1,61 @@
+$calendar-prefix-cls: "#{$ant-prefix}-calendar";
+$calendar-timepicker-prefix-cls: "#{$ant-prefix}-calendar-time-picker";
+
+
+.#{$calendar-prefix-cls} {
+  &-date {
+    &:hover {
+      background: lighten($primary-color, 30%);
+    }
+    &:active {
+      color: #fff;
+      background: lighten($primary-color, 20%);
+    }
+  }
+  &-today &-date {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+  &-last-month-cell &-date,
+  &-next-month-btn-day &-date {
+    color: #ccc;
+  }
+  
+  &-selected-day &-date {
+    background: $primary-color;
+    color: #fff;
+    &:hover {
+      background: $primary-color;
+    }
+  }
+}
+//十年份选中后
+.#{$calendar-prefix-cls}-decade-panel-selected-cell .#{$calendar-prefix-cls}-decade-panel-decade {
+  background: $primary-color;
+  color: #fff;
+
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
+}
+//年份选中后
+.#{$calendar-prefix-cls}-year-panel-selected-cell .#{$calendar-prefix-cls}-year-panel-year {
+  background: $primary-color;
+  color: #fff;
+
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
+}
+//月份选中后
+.#{$calendar-prefix-cls}-month-panel-selected-cell .#{$calendar-prefix-cls}-month-panel-month {
+  background: $primary-color;
+  color: #fff;
+
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
+}

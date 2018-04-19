@@ -1,0 +1,29 @@
+$popover-prefix-cls: "#{$ant-prefix}-popover";
+$popover-btn-color:#5cb85c;
+$border-radius-base:6px;
+.#{$popover-prefix-cls} {
+    &-inner-content {
+        padding: 8px 20px;
+    }
+    &-inner {
+        border-radius: $border-radius-base;
+    }
+    &-buttons {
+        text-align: right;
+        margin-bottom: 8px;
+        button {
+        margin-left: 8px;
+        }
+        .#{$ant-prefix}-btn-primary{
+            @include button-color(#FFFFFF,$popover-btn-color,$popover-btn-color);
+            &:hover,
+            &:focus {
+                @include button-color(#FFFFFF, lighten($popover-btn-color, 10%), lighten($popover-btn-color, 10%));
+            }
+            &:active,
+            &.active {
+                @include button-color(#FFFFFF,darken($popover-btn-color, 5%), darken($popover-btn-color, 5%));
+            }
+        }
+    }
+}

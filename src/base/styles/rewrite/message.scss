@@ -1,0 +1,13 @@
+$message-prefix-cls: "#{$ant-prefix}-message";
+$message-min-width: 330px;
+
+.#{$message-prefix-cls} {
+    font-size: 14px;
+    &-notice-content {
+        min-width: $message-min-width;
+        text-align: center;
+        padding-top:9px;
+        padding-bottom:9px;
+        border-radius: $border-radius-base;
+    }
+}

@@ -1,0 +1,10 @@
+$spin-prefix-cls: "#{$ant-prefix}-spin";
+
+.#{$spin-prefix-cls} {
+    color: $primary-color;
+    &-dot {
+        i {
+            background-color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+
+.instant-sidberwarp-modal{
+    top:50%;
+    margin-top: -99px;
+    .ant-modal-header{
+        background-color: #fff;
+        border-bottom: 1px solid #e2e2e2;
+        padding: 12px 26px;
+    }
+    .instant-sidberwarp-title{
+        .instant-sidberwarp-status{
+            font-size: 12px;
+            margin-left: 20px;
+            color:#999;
+            font-weight: 100;
+        }
+        .instant-sidberwarp-right-pic-use{
+            color:#417505;
+        }
+        .instant-sidberwarp-right-pic-distribute{
+            color:#F6A623;
+        }
+        .instant-sidberwarp-right-pic-die{
+            color:#D0011B;
+        }
+    }
+    .ant-modal-body{
+        padding: 16px 80px 10px 14px;
+    }
+    .instant-sidberwarp-info{
+        display: flex;
+        .instant-sidberwarp-left{
+            display: flex;
+            flex-direction: column;
+            margin-right: 120px;
+            p{
+                font-size: 12px;
+                font-weight: 100;
+                margin-bottom: 10px;
+                width: 200px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+                span{
+                    text-align: right;
+                    display: inline-block;
+                    width: 70px;
+                }
+            }
+        }
+        .instant-sidberwarp-right{
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 12px;
+                font-weight: 100;
+                margin-bottom: 10px;
+                width: 200px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                span{
+                    text-align: right;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

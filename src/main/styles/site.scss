@@ -1,0 +1,28 @@
+.ew-layout-content{
+    .site-content {
+        .site-head{
+            line-height: 68px;
+            border-bottom: 2px solid #e5e8ec;
+            .ant-input-affix-wrapper{
+                margin-left: 20px;
+            }
+            .ant-select{
+                margin-left: 20px;
+            }
+            .site-btns{
+                float: right;
+                margin-right: 20px;
+                .create-site-btn{
+                    margin-right: 20px;
+                }
+            }
+        }
+        .site-body{
+            padding: 20px;
+            .ant-table-wrapper{
+                border: 1px solid #e5e8ec;
+            }
+        }
+    }
+} 
+

@@ -1,0 +1,78 @@
+.bom-wrap {
+  border-bottom: 2px solid #e5e8ec;
+  .bom-header {
+    display: inline-block;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    border: 1px solid #e2e2e2;
+    margin-top: 12px;
+    .bom-header-title {
+      margin-left: 20px;
+      font-size: 14px;
+      color: #4b4b4b;
+      font-weight: bold;
+    }
+    .default-btn {
+      color: #fff;
+      background-color: #4c80cf;
+      border-color: #4c80cf;
+    }
+    .default-btn:hover {
+      background: #fff;
+      color: #108ee9;
+    }
+    .save {
+      position: absolute;
+      right: 95px;
+      top: 20px;
+      margin-right: 10px;
+    }
+    .back {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    .add-return-icon{
+               font-size: 12px;
+               margin-right: 7px;
+               transform: rotate(90deg);
+               -moz-transform:rotate(90deg);
+               -webkit-transform:rotate(90deg);
+               display: inline-block;
+         }
+    .save-back {
+      position: absolute;
+      right: 140px;
+      top: 20px;
+    }
+  }
+  .bom-form-content {
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 20px;
+  }
+  .bom-baseinfo{
+    padding-top: 24px;
+    padding-bottom: 14px;
+    font-size: 14px;
+    color: #4a4a4a;
+    padding-left: 16px;
+  }
+  .bom-delInfo {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    .bom-baseInfo-icon {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      font-size: 10px;
+      line-height: .9;
+      border-left: 5px solid #fd7c28;
+    }
+    .bom-form-baseInfo {
+      margin-left: 10px;
+    }
+  }
+
+}

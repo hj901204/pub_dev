@@ -1,0 +1,209 @@
+.ew-layout{
+    .ant-layout-content {
+        .ew-tabs{
+            .ant-tabs-content{
+                .ant-tabs-tabpane{
+                    .ant-form{
+                        .ant-row{
+                            .production-num{
+                                position: relative;
+                                padding-left: 21px;
+                                .production-name{
+                                    position:absolute;
+                                    top:40px;
+                                    right:4%;
+                                    line-height: 32px
+                                }
+                            }
+                            .bomVersion{
+                                display: none;
+                            }
+                            .sourceLineNumber{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .columns-distribute{
+                    cursor: pointer;
+                    text-align: center;
+                    border:1px solid #e2e2e2;
+                    border-radius: 100%;
+                    color: #999;
+                }
+                .columns-distribute:hover{
+                    background-color: #4c80cf;
+                    color: #fff;
+                    border:1px solid #4c80cf; 
+                }
+                .columns-center{
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+}
+
+.Production-detail{
+    border:1px solid #e2e2e2;
+    margin-top: 12px;
+    .PurchaseView-title {
+        height: 70px;
+        line-height: 70px;
+        padding: 0 0 0 16px;
+        border-bottom: 1px solid #e2e2e2;
+        .PurchaseView-order {
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            margin: 16px 0 1px 0;
+            font-family: PingFangSC-Semibold;
+        }
+        .PurchaseView-status {
+            height: 17px;
+            line-height: 17px;
+            margin-bottom: 16px;
+        }
+        .PurchaseView-btns {
+            text-align: right;
+        }
+        .PurchaseView-morebtn {
+            margin: 0 18px 0 19px;
+        }
+    }
+    .PurchaseView-info {
+        .PurchaseView-infotitle {
+            margin: 13px 19px 10px 16px;
+            height: 17px;
+            b {
+                height: 17px;
+                line-height: 17px;
+                display: block;
+                color: #31425b;
+                
+            }
+        }
+        .PurchaseView-informations {
+            margin: 0 16px;
+            height: 240px;
+            ul {
+                padding-top: 13px;
+                margin-right: 16px;
+                height: 240px;
+                li {
+                    height: 17px;
+                    margin: 0 0 20px 0;
+                    color: #4b4b4b;
+                    letter-spacing: -0.39px;
+                    span {
+                        display: inline-block;
+                        width: 85px;
+                        text-align: right;
+                        color:#999999;
+                    }
+                }
+                .ProductionView-infonum {
+                    margin: 0 0 14px 0;
+                    height: 17px;
+                    b {
+                        height: 17px;
+                        line-height: 17px;
+                        display: block;
+                        color: #31425b;
+                        span {
+                            display: inline-block;
+                            width: 3px;
+                            height: 15px;
+                            background: #FE8010;
+                            vertical-align: top;
+                            margin-top: 1px;
+                        }
+                    }
+                }
+            }
+            .PurchaseView-ulborder {
+                border-right: 1px solid #e2e2e2;
+            }
+            .productionView-ul {
+                height: 420px;
+            }
+        }
+        .ProductionView-informations {
+            height: 420px;
+        }
+    }
+    .PurchaseView-remark {
+            border-top: 1px solid #e2e2e2;
+        p {
+            margin: 15px 96px 0px 31px;
+        }
+        .ProductionView-remark {
+            margin: 15px 96px 20px 31px;
+        }
+    }
+    .PurchaseView-remarkinfo {
+        margin: 20px 20px 30px;
+        div {
+            // height: 311px;
+            // background: #f3f3f3;
+            // box-shadow: 3px 3px 10px 0 rgba(208, 207, 207, 0.50);
+        }
+        textarea {
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            resize: none;
+            border: 0;
+            background: #f3f3f3;
+            min-height: 100px
+        }
+        .remarkinfo-inside {
+            background: #f3f3f3;
+            padding: 10px 20px;
+            height: 100px;
+            overflow-y: scroll;
+            margin-right: 48px;
+            box-shadow: 3px 3px 10px 0 rgba(208, 207, 207, 0.50);
+        }
+        .remarkinfo-rightinside {
+            background: #f3f3f3;
+            padding: 10px 20px;
+            height: 100px;
+            overflow-y: scroll;
+            box-shadow: 3px 3px 10px 0 rgba(208, 207, 207, 0.50);
+        }
+    }
+    .addPro-title{
+        height: 80px;
+        border-bottom: 1px solid #e2e2e2;
+        .mainTitle{
+            font-family: '.PingFangSC-Medium';
+            margin-top: 13px;
+            font-size: 14px;
+            color:#4a4a4a;
+            font-weight: bold;
+        }
+        .title-row{
+            .ant-form-item{
+                margin-bottom: 0px;
+                // margin-left: -50px
+            }
+        }
+        .backBtn{
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 30px;
+            .c2m-daoru_nor{
+                margin-right: 6px;
+                font-size: 10px;
+                display:inline-block;
+                transform:rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+/node_modules/
+.vscode/
+.idea/
+/export/css/
+/export/scripts/
+/export/*.html
+/export/ch/
+/export/en/
+/manifest.json
+base.webpack.js
+mynode.js
+/yknode.js
